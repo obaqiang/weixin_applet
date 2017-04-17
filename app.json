@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index_main_message/index_main_message",
+    "pages/index/index",
+    "pages/index_main/index_main",
+    "pages/index_main_card/index_main_card",
+    "pages/index_main_message/index_main_message",
+    "pages/index_main_mine/index_main_mine",
+    "pages/index_main_setting/index_main_setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#cb2920",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/48px_48px_card_red.png",
+        "iconPath": "img/48px_48px_card_gray.png",
+        "pagePath": "pages/index_main_card/index_main_card",
+        "text": "卡包"
+      },
+      {
+        "selectedIconPath": "img/48px_48px_news_red.png",
+        "iconPath": "img/48px_48px_news_gray.png",
+        "pagePath": "pages/index_main_message/index_main_message",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "img/48px_48px_me_red.png",
+        "iconPath": "img/48px_48px_me_gray.png",
+        "pagePath": "pages/index_main_mine/index_main_mine",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "img/48px_48px_set_red.png",
+        "iconPath": "img/48px_48px_set_gray.png",
+        "pagePath": "pages/index_main_setting/index_main_setting",
+        "text": "设置"
+      }
+    ]
+  }
+}

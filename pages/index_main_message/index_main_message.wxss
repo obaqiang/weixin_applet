@@ -1,0 +1,28 @@
+/* pages/index_main_message/index_main_message.wxss */
+
+.message_head {
+  position: fixed;
+  width: 100%;
+  height: 40rpx;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+.head_pay {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.head_action {
+    float: left;
+    width: 49%;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+.head_pay image {
+    width: 40rpx;
+    height: 40rpx
+}
+.head_action image {
+    width: 40rpx;
+    height: 40rpx
+}

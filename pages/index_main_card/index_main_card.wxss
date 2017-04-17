@@ -1,0 +1,150 @@
+/* pages/index_main_card/index_main_card.wxss */
+
+.nav_head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 85rpx;
+  background: #cb2920;
+}
+
+.nav_head image {
+  width: 178rpx;
+  height: 44rpx;
+  margin-top: 18rpx;
+  margin-left: 10rpx;
+}
+
+.main_head_search {
+  display: inline-block;
+  height: 50rpx;
+  width: 350rpx;
+  background: #a71a12;
+  position: relative;
+  top: 6rpx;
+  left: 20rpx;
+  border-radius: 0.05rem;
+}
+
+.main_head_search image {
+  width: 26rpx;
+  height: 26rpx;
+  position: absolute;
+  top: -3rpx;
+  left: 3rpx;
+}
+
+.main_head_search input {
+  position: absolute;
+  display: inline-block;
+  width: 280rpx;
+  height: 26rpx;
+  left: 70rpx;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.main_head_sao {
+  float: right;
+  margin-top: -10rpx;
+  margin-right: 15rpx;
+  text-align: center;
+}
+
+.main_head_sao image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.main_head_sao text {
+  display: block;
+  font-size: 23rpx;
+  color: #fff;
+  margin-left: 10rpx;
+}
+
+.card_list {
+  width: 95%;
+  margin: 30rpx auto;
+  position: relative;
+  color: #1c1c1c;
+}
+
+.card_in {
+  width: 500rpx;
+  height: 300rpx;
+}
+
+.card_out {
+  width: 500rpx;
+  height: 320rpx;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: -10rpx;
+}
+
+.card_list_c {
+  width: 95%;
+  margin: 30rpx auto;
+  position: relative;
+  text-align: right;
+  color: #1c1c1c;
+}
+
+.card_out_c {
+  width: 500rpx;
+  height: 320rpx;
+  position: absolute;
+  top: -10rpx;
+  left: 0;
+}
+
+.card_in_c {
+  width: 500rpx;
+  height: 300rpx;
+}
+
+.card_shop_name {
+  position: absolute;
+  top: 30rpx;
+  left: 350rpx;
+  font-size: 28rpx;
+}
+
+.card_shop_num {
+  position: absolute;
+  top: 90rpx;
+  left: 350rpx;
+  font-size: 28rpx;
+}
+
+.card_shop_type {
+  position: absolute;
+  top: 150rpx;
+  left: 350rpx;
+  font-size: 28rpx;
+}
+
+.card_shop_prize {
+  position: absolute;
+  top: 210rpx;
+  left: 350rpx;
+  font-size: 28rpx;
+}
+
+.te_c {
+  left: 40rpx;
+}
+
+.card_shop_tel {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 220rpx;
+  right: 20rpx;
+  z-index: 10;
+}
+

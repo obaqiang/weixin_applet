@@ -1,0 +1,12 @@
+
+<!--pages/index_main_message/index_main_message.wxml-->
+<view class="mes_head">
+  <view class="head_pay">
+    <image src="../../img/28px_28px_icon1.png"></image>
+    <text>支付消息</text>
+  </view>
+  <view class="head_action">
+    <image src="../../img/28px_28px_icon2.png"></image>
+    <text>活动消息</text>
+  </view>
+</view>

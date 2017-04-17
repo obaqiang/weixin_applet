@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<navigator url="../index_main_card/index_main_card" open-type="switchTab">跳转到卡包页面</navigator>
