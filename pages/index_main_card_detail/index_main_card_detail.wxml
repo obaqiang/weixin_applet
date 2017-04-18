@@ -1,0 +1,109 @@
+
+<!--pages/index_main_card_detail/index_main_card_detail.wxml-->
+<view class="card_detail_nav">
+  <view class="card_detail_nav_left">
+    <image class="nav_icon" src="../../img/54px_54px_icon1.png"></image>
+    <text class="nav_text">全部商品</text>
+  </view>
+  <view class="card_detail_nav_right">
+    <image class="nav_icon" src="../../img/54px_54px_icon1.png"></image>
+    <text class="nav_text">全部商品</text>
+  </view>
+</view>
+<view class="mine_list list_one">
+  <view class="list_body">
+    <text class="list_body_change">余额</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    <text class="change_num">￥0.00</text>
+  </view>
+</view>
+<view class="mine_list">
+  <view class="list_body">
+    <text class="list_body_change">积分兑换</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    <text class="change_num">123132</text>
+  </view>
+</view>
+
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{hotList}}">
+    <image src="{{item.pic}}" class="recommend_hot_image"></image>
+    <text class="coupon_tex_1">10</text>
+    <text class="coupon_tex_2">元</text>
+    <text class="coupon_tex_3">(满200可用)</text>
+    <text class="coupon_tex_4">点击领取</text>
+  </view>
+</scroll-view>
+
+
+<view class="vip_text">
+  会员专享
+</view>
+<view class="vip_area">
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_huodong.png"></image>
+    <text class="area_list_tex">活动</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_youhuiquan.png"></image>
+    <text class="area_list_tex">优惠券</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_hongbao.png"></image>
+    <text class="area_list_tex">红包</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_jiangpin.png"></image>
+    <text class="area_list_tex">奖品</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_chongzhi.png"></image>
+    <text class="area_list_tex">充值记录</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_xiaofei.png"></image>
+    <text class="area_list_tex">消费记录</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_zhangdan.png"></image>
+    <text class="area_list_tex">账单</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_qiandan.png"></image>
+    <text class="area_list_tex">签单</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_tuoguuan.png"></image>
+    <text class="area_list_tex">托管</text>
+  </view>
+  <view class="area_list">
+    <image class="area_list_img" src="../../img/64px_paizhao.png"></image>
+    <text class="area_list_tex">交易拍照</text>
+  </view>
+</view>
+<view class="mine_list list_one">
+  <view class="list_body">
+    <text class="list_body_change">商家简介</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    <text class="change_num">查看详情</text>
+  </view>
+</view>
+<view class="shop_area">
+  <view class="area_data_1">
+    <text class="store_name">店铺名字</text>
+    <text class="store_time">营业时间 00:00:00</text>
+    <text class="store_address">商家地址:速度回家咯好的卡上肯定撒结婚扩大和肯德基哈萨克的机打撒打撒飒飒阿斯顿撒旦撒大苏打撒大苏打会</text>
+  </view>
+  <view class="area_data_2">
+    <image class="map" src="../../img/56px_56px_ditu.png"></image>
+    <image class="tel" src="../../img/56px_56px_dianhua.png"></image>
+  </view>
+</view>
+<view class="mine_list list_one">
+  <view class="list_body">
+    <text class="list_body_change">我要反馈</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    <text class="change_num">查看详情</text>
+  </view>
+</view>
+<image style="width:100%;height:200rpx;" src="../../img/750px_187px_background.png"></image>

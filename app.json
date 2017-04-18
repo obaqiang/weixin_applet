@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/index_main_message/index_main_message",
+    "pages/index_main_card_detail/index_main_card_detail",
     "pages/index/index",
     "pages/index_main/index_main",
     "pages/index_main_card/index_main_card",
+    "pages/index_main_card_products/index_main_card_products",
+    "pages/index_main_card_detail/index_main_card_detail",
     "pages/index_main_message/index_main_message",
     "pages/index_main_mine/index_main_mine",
     "pages/index_main_setting/index_main_setting"

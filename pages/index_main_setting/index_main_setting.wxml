@@ -1,2 +1,25 @@
-<!--pages/index_main_setting/index_main_setting.wxml-->
-<text>pages/index_main_setting/index_main_setting.wxml</text>
+<view class="mine_list">
+  <view class="list_body">
+    <image class="img_1" src="../../img/42px_42px_icon1.png"></image>
+    <text class="tex_1">我的二维码</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+  </view>
+</view>
+<view class="mine_list">
+  <view class="list_body">
+    <image class="img_1" src="../../img/48px_48px_icon2.png"></image>
+    <text class="tex_1">我的付款码</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+  </view>
+</view>
+<view class="mine_list">
+  <view class="list_body">
+    <image class="img_1" src="../../img/48px_48px_icon3.png"></image>
+    <text class="tex_1">我要发卡</text>
+    <image class="img_2" src="../../img/16px_26px_V.png"></image>
+  </view>
+</view>
+
+<view class="set_out">
+    退出登录
+</view>

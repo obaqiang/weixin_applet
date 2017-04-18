@@ -1,0 +1,188 @@
+/* pages/index_main_card_detail/index_main_card_detail.wxss */
+@import "../index_main_mine/index_main_mine.wxss";
+
+page {
+  background-color: #efeff4;
+}
+
+.card_detail_nav {
+  overflow: hidden;
+}
+
+.card_detail_nav_left {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  background: #fff;
+  padding-top: 14rpx;
+  padding-bottom: 14rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.nav_icon {
+  width: 54rpx;
+  height: 54rpx;
+  display: block;
+  margin: auto;
+}
+
+.nav_text {
+  margin-top: 10px;
+  display: block;
+  color: #1c1c1c;
+  font-size: 26rpx;
+}
+
+.card_detail_nav_right {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  background: #fff;
+  padding-top: 14rpx;
+  padding-bottom: 14rpx;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+
+.list_body_change {
+  left: 30rpx;
+  font-size: 30rpx;
+}
+
+.change_num {
+  color: #a4a4a4;
+  position: absolute;
+  right: 60rpx;
+  font-size: 30rpx;
+}
+
+.vip_text {
+  background: #fff;
+  font-size: 25rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  margin-top: 14rpx;
+}
+
+.vip_area {
+  overflow: hidden;
+}
+
+.area_list {
+  width: 25%;
+  float: left;
+  text-align: center;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border: 1rpx solid #ddd;
+}
+
+.area_list_img {
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+  margin: auto;
+  margin-bottom: 20rpx;
+}
+
+.area_list_tex {
+  font-size: 30rpx;
+}
+
+.shop_area {
+  background: #fff;
+  overflow: hidden;
+}
+
+.area_data_1 {
+  width: 60%;
+  padding-left: 4%;
+  float: left;
+}
+
+.store_name {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  display: block;
+  padding-top: 20rpx;
+}
+
+.store_time {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #a4a4a4;
+  display: block;
+}
+
+.store_address {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #a4a4a4;
+  display: block;
+}
+.area_data_2{
+    width: 40%;
+    float: left;
+}
+.map{
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 50rpx;
+    margin-left: 60rpx;
+}
+.tel{
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 50rpx;
+    margin-left: 60rpx;
+}
+
+
+
+.recommend_scroll_x_box {
+  height: 100rpx;
+  white-space: nowrap;
+  display: flex;
+  padding: 10rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.recommend_hot_box {
+  width: 210rpx;
+  height: 245rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+  position: relative;
+}
+
+.recommend_hot_image {
+  width: 200rpx;
+  height: 100rpx;
+}
+.coupon_tex_1{
+  position: absolute;
+  font-size: 40rpx;
+  color: #fff;
+  top: 10rpx;
+  left: 20rpx;
+}
+.coupon_tex_2{
+  position: absolute;
+  font-size: 20rpx;
+  top: 0rpx;
+  left: 0rpx;
+  color: #fff;
+}
+.coupon_tex_3{
+  position: absolute;
+  font-size: 20rpx;
+  top: 0rpx;
+  left: 0rpx;
+  color: #fff;
+}

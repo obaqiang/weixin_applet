@@ -1,0 +1,55 @@
+
+<!--pages/index_main_card_products/index_main_card_products.wxml-->
+<view class="products_search">
+  <view class="search_area">
+    <image class="ser_img" src="../../img/26px_26px_search.png"></image>
+    <input class="ser_inp" placeholder="搜索产品" />
+  </view>
+  <image class="ser_icon_img" src="../../img/56px_42px_fenlei.png"></image>
+</view>
+<view class="products_list">
+  <view class="list_head">
+    移动硬盘
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+</view>
+<view class="products_list">
+  <view class="list_head">
+    移动硬盘
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+  <view class="list_body">
+    <image class="list_img" src="../../img/164px_164px_chanpin.png"></image>
+    <text class="list_name">会尽快释放的会计核算地方好久开始大方式犯得上发射点幅</text>
+    <text class="list_prize">1499.00元/件</text>
+    <image class="list_icon" src="../../img/16px_26px_V.png"></image>
+  </view>
+</view>

@@ -1,0 +1,89 @@
+/* pages/index_main_card_products/index_main_card_products.wxss */
+
+page {
+  background-color: #efeff4;
+}
+
+.products_search {
+  background: #fff;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+}
+
+.search_area {
+  border: 1px solid #cdcdcd;
+  width: 600rpx;
+  height: 70rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+}
+
+.ser_img {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  float: left;
+}
+
+.ser_inp {
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.ser_icon_img {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-top: 10rpx;
+  margin-right: 35rpx;
+}
+
+.list_head {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+}
+
+.list_body {
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx;
+}
+
+.list_img {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #ccc;
+}
+
+.list_name {
+  position: absolute;
+  top: 30rpx;
+  left: 200rpx;
+  color: #1c1c1c;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  display: inline-block;
+  width: 500rpx;
+}
+
+.list_prize {
+    position: absolute;
+    top: 150rpx;
+    left: 200rpx;
+    color: #cb2920;
+    font-size: 30rpx;
+}
+.list_icon {
+    position: absolute;
+    width: 30rpx;
+    height: 30rpx;
+    top: 100rpx;
+    right: 30rpx;
+}

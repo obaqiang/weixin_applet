@@ -1,1 +1,94 @@
 /* pages/index_main_mine/index_main_mine.wxss */
+
+page {
+  background-color: #efeff4;
+}
+
+.head_msg {
+  text-align: center;
+  background: url(../../img/750px_400px_background.png);
+  background-size: 100%;
+  height: 400rpx;
+}
+
+.head_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: 44rpx;
+}
+
+.head_text {
+  color: #fff;
+  margin-top: 38rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+
+.head_data {
+  width: 100%;
+  height: 110rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.head_tel {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.head_birth {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  float: left;
+  border-left: 1px solid #fff;
+  margin-top: 10rpx;
+}
+
+.list_one {
+  margin-top: 20rpx;
+}
+
+.mine_list {
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+
+.list_body {
+  border-bottom: 1px solid #ddd;
+  line-height: 80rpx;
+  position: relative;
+  height: 90rpx;
+  overflow: hidden;
+}
+
+.img_1 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 20rpx;
+}
+
+.tex_1 {
+  position: absolute;
+  left: 110rpx;
+  font-size: 25rpx;
+}
+
+.img_2 {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+}

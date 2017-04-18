@@ -1,28 +1,119 @@
 /* pages/index_main_message/index_main_message.wxss */
-
-.message_head {
+page{
+    background-color:#efeff4;
+}
+.mes_head {
   position: fixed;
   width: 100%;
   height: 40rpx;
+  line-height: 60rpx;
   border-bottom: 1px solid #ddd;
-  background: #fff;
 }
+
 .head_pay {
-    float: left;
-    width: 50%;
-    text-align: center;
+  float: left;
+  width: 50%;
+  text-align: center;
 }
+
 .head_action {
-    float: left;
-    width: 49%;
-    text-align: center;
-    border-left: 1px solid #ddd;
+  float: left;
+  width: 50%;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  box-sizing: border-box;
 }
+
 .head_pay image {
-    width: 40rpx;
-    height: 40rpx
+  width: 40rpx;
+  height: 40rpx;
 }
+
 .head_action image {
-    width: 40rpx;
-    height: 40rpx
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.mes_time {
+  text-align: center;
+}
+
+.mes_time text {
+  display: inline-block;
+  border-radius: 15rpx;
+  padding: 5rpx 10rpx;
+  background-color: #cdcdcd;
+  margin-top: 25rpx;
+}
+
+.mes_squ {
+  background: #fff;
+  border-radius: 10rpx;
+  width: 90%;
+  margin: 20rpx auto 0;
+}
+
+.squ_head {
+  color: #1c1c1c;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+}
+
+.squ_prize {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  width: 95%;
+  margin: 25rpx auto 0;
+  padding-bottom: 18rpx;
+}
+
+.squ_prize_num {
+  color: #df2b2b;
+  font-size: 50rpx;
+}
+
+
+
+.squ_body {
+  width: 95%;
+  margin: 20rpx auto 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40rpx;
+}
+
+.body_list {
+  line-height: 50rpx;
+}
+
+.body_list text:nth-child(1) {
+  display: inline-block;
+  width: 20%;
+  color: #1c1c1c;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.body_list text:nth-child(3) {
+  color: #777;
+  font-size: 25rpx;
+}
+
+.squ_detail {
+  color: #1c1c1c;
+  line-height: 70rpx;
+  margin-left: 20rpx;
+  
+}
+
+.squ_detail text {
+  font-size: 25rpx;
+}
+
+.squ_detail image {
+  float: right;
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 25rpx;
+  margin-right: 20rpx;
 }

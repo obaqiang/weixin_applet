@@ -1,2 +1,38 @@
+
 <!--pages/index_main_mine/index_main_mine.wxml-->
-<text>pages/index_main_mine/index_main_mine.wxml</text>
+<view class="head_msg">
+  <image class="head_icon " src="../../img/146px_146px_moren.png"></image>
+  <view class="head_text">好帅的强</view>
+  <view class="head_data">
+    <view class="head_tel">
+      <view>手机号</view>
+      <view>130321111111</view>
+    </view>
+    <view class="head_birth">
+      <view class="classname">生日</view>
+      <view class="classname">1991-08-05</view>
+    </view>
+  </view>
+</view>
+
+<view class="mine_list list_one">
+    <view class="list_body">
+        <image class="img_1" src="../../img/48px_48px_icon1.png"></image>
+        <text class="tex_1">我的二维码</text>
+        <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    </view>
+</view>
+<view class="mine_list">
+    <view class="list_body">
+        <image class="img_1" src="../../img/48px_48px_icon2.png"></image>
+        <text class="tex_1">我的付款码</text>
+        <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    </view>
+</view>
+<view class="mine_list">
+    <view class="list_body">
+        <image class="img_1" src="../../img/48px_48px_icon3.png"></image>
+        <text class="tex_1">我要发卡</text>
+        <image class="img_2" src="../../img/16px_26px_V.png"></image>
+    </view>
+</view>

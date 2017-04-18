@@ -1,1 +1,9 @@
 /* pages/index_main_setting/index_main_setting.wxss */
+@import "../index_main_mine/index_main_mine.wxss";
+.set_out{
+    background: #fff;
+    font-size: 25rpx;
+    line-height: 60rpx;
+    text-align: center;
+    margin-top: 100rpx;
+}
