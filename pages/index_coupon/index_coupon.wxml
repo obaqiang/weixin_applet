@@ -1,0 +1,37 @@
+<!--pages/index_coupon/index_coupon.wxml-->
+
+<view class="rec_nav">
+    <view class="rec_list">
+        <image class="list_img" src="../../img/34px_34px_icon1.png"></image>
+        <text>未使用</text>
+    </view>
+    <view class="rec_list_mid">
+        <image class="list_img" src="../../img/34px_34px_icon2.png"></image>
+        <text>已使用</text>
+    </view>
+    <view class="rec_list">
+        <image class="list_img" src="../../img/34px_34px_icon3.png"></image>
+        <text>已失效</text>
+    </view>
+</view>
+
+<view class="cou_area">
+    <view class="cou_list">
+        <view class="list_left">
+            <text class="list_prize">88</text>
+            <text class="list_time">使用期限 2016-7-18~2016-8-18</text>
+            <text class="list_limit">满￥0可用</text>
+        </view>
+        <image class="cou_list_img" src="../../img/180px_180px_3.png"></image>
+        <view class="list_num">￥88</view>
+    </view>
+    <view class="cou_list">
+        <view class="list_left">
+            <text class="list_prize">88</text>
+            <text class="list_time">使用期限 2016-7-18~2016-8-18</text>
+            <text class="list_limit">满￥0可用</text>
+        </view>
+        <image class="cou_list_img" src="../../img/180px_180px_3.png"></image>
+        <view class="list_num">￥88</view>
+    </view>
+</view>

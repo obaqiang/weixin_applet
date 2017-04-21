@@ -1,0 +1,50 @@
+/* pages/index_account/index_account.wxss */
+
+.account_head {
+  background-color: #cb2920;
+}
+
+.head_title {
+  text-align: center;
+  color: #fff;
+  padding-top: 70rpx;
+  padding-bottom: 120rpx;
+}
+
+.title_num {
+  font-size: 40rpx;
+}
+
+.title_unit {
+  font-size: 25rpx;
+  line-height: 40rpx;
+}
+
+.list_body {
+  background-color: #fff;
+  overflow: hidden;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.list_name {
+  font-size: 30rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.list_prize {
+  font-size: 30rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.list_img {
+  width: 25rpx;
+  height: 25rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 28rpx;
+}

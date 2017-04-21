@@ -1,0 +1,16 @@
+<!--pages/index_account/index_account.wxml-->
+
+<view class="account_head">
+    <view class="head_title">
+        <view class="title_num">33242</view>
+        <view class="title_unit">余额总计（元）</view>
+    </view>
+
+</view>
+
+<view class="list_body">
+    <view class="list_name">超级豪华套餐</view>
+    <image class="list_img" src="../../img/26px_16px.png"></image>
+    <view class="list_prize">￥110.00</view>
+    
+</view>

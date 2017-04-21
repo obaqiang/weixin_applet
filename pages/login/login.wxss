@@ -1,0 +1,70 @@
+/* pages/login/login.wxss */
+page{
+    background: #fff;
+}
+.no_login_mask{
+    text-align: center;
+}
+.login_head{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 100rpx auto;
+}
+.form_line{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1rpx solid #ddd;
+    height: 100rpx;
+    line-height: 120rpx;
+}
+.form_img{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 20rpx;
+}
+
+.user_in{
+    display: inline-block;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+}
+.btn_login{
+    margin-top: 30rpx;
+    background-color: #cb2920;
+    color: #fff;
+    width: 90%;
+}
+.link_area{
+    margin-top: 40rpx;
+    overflow: hidden;
+}
+.login_nohook_icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 40rpx;
+    float: left;
+}
+.tex_1{
+    font-size: 25rpx;
+    color: #aaaaaa;
+    float: left;
+    margin-left: 20rpx;
+}
+.tex_2{
+    font-size: 25rpx;
+    color: #aaaaaa;
+    float: right;margin-right: 40rpx;
+}
+.tex_3{
+    font-size: 25rpx;
+    color: #aaaaaa;
+    float: right;
+    margin-right: 40rpx;
+}
+.ide_img{
+    float: right;
+    width: 180rpx;
+    height: 70rpx;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+}

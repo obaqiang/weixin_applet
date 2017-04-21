@@ -1,0 +1,41 @@
+/* pages/index_main_card_detail_points_detail/index_main_card_detail_points_detail.wxss */
+.po_list{
+    background: #fff;
+    overflow: hidden;
+    line-height: 70rpx;
+    border-bottom: 1rpx solid #ddd;
+    font-size: 30rpx;
+
+}
+.li_le{
+    float: left;
+    margin-left: 20rpx;
+}
+.li_ri{
+    float: right;
+    margin-right: 20rpx;
+    color:#aaaaaa;
+}
+.btn_bot{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #fff;
+    background-color: #aaaaaa;
+}
+.btn_left{
+    width: 50%;
+    float: left;
+    text-align: center;
+    
+}
+.btn_right{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.btn_on{
+    background-color: #cb2920;
+}

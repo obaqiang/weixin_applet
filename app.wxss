@@ -17,3 +17,6 @@ view{
 .bg_ff{
   background-color: #fff;
 }
+page {
+  background-color: #efeff4;
+}

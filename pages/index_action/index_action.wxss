@@ -1,0 +1,75 @@
+/* pages/index_action/index_action.wxss */
+
+.action_acc {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  padding: 20rpx;
+  position: relative;
+}
+
+.acc_left {
+  width: 50%;
+  text-align: center;
+  float: left;
+  border-right: 1rpx solid #ddd;
+}
+
+.acc_icon {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.acc_right {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.acc_content {
+  margin-top: 20rpx;
+  position: relative;
+  background: #fff;
+}
+
+.con_img_1 {
+  width: 95%;
+  display: block;
+  margin: auto;
+  height: 300rpx;
+}
+
+.con_img_2 {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.acc_status {
+  position: absolute;
+  display: inline-block;
+  font-size: 30rpx;
+  color: #fff;
+  bottom: 70rpx;
+  right: 20rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10rpx;
+}
+.con_des{
+    height: 70rpx;
+    line-height: 70rpx;
+
+}
+.des_left{
+    float: left;
+    margin-left: 20rpx;
+    font-size: 40rpx;
+}
+.des_right{
+    float: right;
+    margin-right: 20rpx;
+    font-size: 30rpx;
+    color: #777;
+}

@@ -1,0 +1,36 @@
+/* pages/index_main_card_products_detail/index_main_card_products_detail.wxss */
+
+.detail_data {
+  border-top: 1rpx solid #eee;
+  background: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #1c1c1c;
+  font-size: 30rpx;
+}
+
+.data_left {
+  float: left;
+  margin-left: 40rpx;
+}
+
+.data_right {
+  float: right;
+  margin-right: 40rpx;
+}
+
+.detail_des_title {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  height: 70rpx;
+  border-top: 1px solid #ddd;
+  display: block;
+  padding-left: 40rpx;
+}
+.detail_des{
+    background-color: #fff;
+     font-size: 30rpx;
+     line-height: 50rpx;
+     padding: 20rpx 40rpx;
+}

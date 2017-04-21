@@ -1,0 +1,23 @@
+
+<!--pages/index_action/index_action.wxml-->
+<view class="action_acc">
+  <view class="acc_left">
+    <text>全部活动</text>
+    <image class="acc_icon" src="../../img/16px_10px_g.png"></image>
+  </view>
+  <view class="acc_right">
+    <text>所有类型</text>
+    <image class="acc_icon" src="../../img/16px_10px_g.png"></image>
+  </view>
+</view>
+<view class="acc_content">
+  <image class="con_img_1" src="http://testimg.bdvip.net//lottery/2017/4/353f9d8376d04ffd9707aea751fa501a.jpg"></image>
+  <image class="con_img_2" src="../../img/120px_120px_jinxingzhong.png"></image>
+  <view class="acc_status">未参与</view>
+  <view class="con_des">
+    <view class="des_left">恭喜发财，大吉大利</view>
+    <view class="des_right">恭喜发财，大吉大利</view>
+
+
+  </view>
+</view>

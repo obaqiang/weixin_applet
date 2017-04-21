@@ -1,0 +1,28 @@
+<!--pages/login/login.wxml-->
+<view class="no_login_mask">
+    <image class="login_head" src="../../img/146px_146px_moren.png"></image>
+</view>
+
+<form>
+    <view class="form_line">
+        <image class="form_img" src="../../img/40px_50px_tel.png"></image>
+        <input type="text" class="user_in" bindblur="telChange" placeholder="请输入手机号码" />
+    </view>
+    <view class="form_line">
+        <image class="form_img" src="../../img/40px_50px_lock.png"></image>
+        <input type="text" class="user_in" bindblur="pwdChange" placeholder="请输入密码" />
+    </view>
+    <view hidden="{{ideHide}}" class="form_line">
+        <image class="form_img" src="../../img/40px_50px_lock.png"></image>
+        <input type="text" class="user_in" bindblur="ideChange" placeholder="请输入验证码" />
+        <image class="ide_img" src="{{identify_img_url}}"></image>
+    </view>
+    <button class="btn_login" bindtap="logBtn">登录</button>
+</form>
+
+<view class="link_area">
+    <image class="login_nohook_icon" src="../../img/34px_34px_nohook.png"></image>
+    <text class="tex_1" bindtap="remPwd">记住密码</text>
+    <text class="tex_2">忘记密码?</text>
+    <text class="tex_3">注册账号</text>
+</view>

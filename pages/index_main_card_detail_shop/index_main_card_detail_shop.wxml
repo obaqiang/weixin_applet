@@ -1,0 +1,26 @@
+
+<!--pages/index_main_card_detail_shop/index_main_card_detail_shop.wxml-->
+<view class="list_area">
+  <view class="list_info">
+    <image class="info_img" src="../../img/38px_38px_icon3.png"></image>
+    <text class="info_name">行业类型:</text>
+    <text class="info_content">尽量扩大交流课件撒</text>
+  </view>
+  <view class="list_info">
+    <image class="info_img" src="../../img/38px_38px_icon2.png"></image>
+    <text class="info_name">商家简介</text>
+    <view class="info_about">
+      次商检阿松速度上坟士 拉萨打开奖励开始打飞机拉开松井大辅了科技时代浪费空间士大夫刻录机大夫似的
+    </view>
+  </view>
+  <view class="list_info">
+    <image class="info_img" src="../../img/38px_38px_icon1.png"></image>
+    <text class="info_name">商家环境:</text>
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_hot_box" wx:for="{{hotList}}">
+        <image src="{{item.pic}}" class="recommend_hot_image"></image>
+        
+      </view>
+    </scroll-view>
+  </view>
+</view>

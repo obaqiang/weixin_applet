@@ -1,0 +1,84 @@
+/* pages/index_main_card_detail_points/index_main_card_detail_points.wxss */
+
+.points_head {
+  background: #fff !important;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  overflow: hidden;
+}
+
+.points_head_list {
+  width: 33%;
+  float: left;
+  text-align: center;
+  font-size: 35rpx;
+  color: #666;
+  padding-bottom: 20rpx;
+}
+.points_head_list_mid{
+    border-left: 1rpx solid #d0d0d0;
+    border-right: 1rpx solid #d0d0d0;
+}
+.list_content{
+    font-size: 30rpx;
+}
+.list_img{
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 50rpx;
+}
+.points_head_num{
+    color: #ef6d6d;
+    margin-top: 50rpx;
+}
+.points_goods{
+    background-color: #fff;
+    margin-top: 40rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size:30rpx;
+    padding-left: 25rpx;
+}
+.pro_list{
+    overflow: hidden;
+    background-color: #fff;
+    border-top: 1rpx solid #ddd;
+    line-height: 40rpx;
+    height: 150rpx;
+    position: relative;
+}
+.pro_img{
+    width: 100rpx;
+    height: 100rpx;
+    position: relative;
+    top: 20rpx;
+    left: 20rpx;
+}
+.pro_icon{
+    width: 30rpx;
+    height: 30rpx;
+}
+.pro_detail{
+    display: inline-block;
+    width: 570rpx;
+    margin-left: 50rpx;
+    margin-top: 20rpx;
+    
+}
+.pro_name{
+    font-size: 30rpx;
+    display: block;
+}
+.pro_more{
+    font-size: 25rpx;
+    color: #8f8f94;
+    
+   
+}
+.pro_icon{
+    position:absolute;
+    right: 20rpx;
+    top: 60rpx;
+    
+}

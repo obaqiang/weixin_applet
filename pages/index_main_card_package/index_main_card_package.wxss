@@ -1,0 +1,40 @@
+/* pages/index_main_card_package/index_main_card_package.wxss */
+.package_list {
+    background: #fff;
+    height: 120rpx;
+    border-bottom: 1rpx solid #dddddd;
+}
+.list_a {
+    border: 1rpx solid #929292;
+    display: inline-block;
+    font-size: 25rpx;
+    padding: 5rpx 10rpx;
+    margin-left: 26rpx;
+    border-radius: 5rpx;
+    position: relative;
+    top: 10rpx;
+}
+
+
+.list_b {
+    display: inline-block;
+    position: relative;
+    top: 30rpx;
+    left: 30rpx;
+    line-height: 40rpx;
+}
+.list_b_name {
+    color: #1c1c1c;
+    font-size: 30rpx;
+}
+.list_b_prize {
+    color: #cb2920;
+    font-size: 25rpx;
+}
+.list_img {
+    float: right;
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 40rpx;
+    margin-right: 20rpx;
+}

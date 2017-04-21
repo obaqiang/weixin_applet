@@ -1,0 +1,37 @@
+
+<!--pages/index_main_card_detail_points_more/index_main_card_detail_points_more.wxml-->
+<view class="po_more_area">
+  <view class="po_more_list">
+    <view class="list_left">+10</view>
+    <view class="list_right">
+      <text>
+        结账赠送产品积分
+      </text>
+      <text class="li_time">
+        2016-04-16 10:00
+      </text>
+    </view>
+  </view>
+  <view class="po_more_list">
+    <view class="list_left">+10</view>
+    <view class="list_right">
+      <text>
+        结账赠送产品积分
+      </text>
+      <text class="li_time">
+        2016-04-16 10:00
+      </text>
+    </view>
+  </view>
+  <view class="po_more_list">
+    <view class="list_left">+10</view>
+    <view class="list_right">
+      <text>
+        结账赠送产品积分
+      </text>
+      <text class="li_time">
+        2016-04-16 10:00
+      </text>
+    </view>
+  </view>
+</view>

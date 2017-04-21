@@ -1,0 +1,26 @@
+<!--pages/index_main_card_detail_points_detail/index_main_card_detail_points_detail.wxml-->
+<view class="po_detail">
+    <view class="po_list">
+        <text class="li_le">名称</text>
+        <text class="li_ri">名称</text>
+    </view>
+    <view class="po_list">
+        <text class="li_le">所需积分</text>
+        <text class="li_ri">132131积分</text>
+    </view>
+    <view class="po_list">
+        <text class="li_le">有效期</text>
+        <text class="li_ri">323323323</text>
+    </view>
+    <view class="po_list">
+        <text class="li_le">说明</text>
+        <text class="li_ri"> 考虑接受的话立刻就会打开结婚的法兰克还得上课讲话</text>
+    </view>
+</view>
+
+
+<view class="btn_bot">
+    <view class="btn_left btn_on">兑换</view>
+    <view class="btn_right">不兑换</view>
+</view>
+

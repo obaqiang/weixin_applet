@@ -170,19 +170,28 @@ page {
   font-size: 40rpx;
   color: #fff;
   top: 10rpx;
-  left: 20rpx;
+  left: 40rpx;
 }
 .coupon_tex_2{
   position: absolute;
-  font-size: 20rpx;
-  top: 0rpx;
-  left: 0rpx;
+  font-size: 25rpx;
+  top: 20rpx;
+  left: 100rpx;
   color: #fff;
 }
 .coupon_tex_3{
   position: absolute;
-  font-size: 20rpx;
-  top: 0rpx;
-  left: 0rpx;
+  font-size: 25rpx;
+  top: 60rpx;
+  left: 15rpx;
   color: #fff;
+}
+.coupon_tex_4{
+  position: absolute;
+  font-size: 23rpx;
+  top: 20rpx;
+  left: 145rpx;
+  color: #fff;
+  display: inline-block;
+  width: 10rpx;
 }

@@ -1,0 +1,27 @@
+/* pages/index_main_card_detail_points_more/index_main_card_detail_points_more.wxss */
+
+.po_more_list {
+  padding-left: 22rpx;
+  border-bottom: 1px solid #c8c8c8;
+  background: #fff;
+  padding-right: 22rpx;
+  padding-bottom: 20rpx;
+  overflow: hidden;
+}
+
+.list_left {
+  float: left;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #cb2920;
+  margin-top: 50rpx;
+}
+
+.list_right {
+  float: right;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+.li_time{
+    color: #aaaaaa;
+}

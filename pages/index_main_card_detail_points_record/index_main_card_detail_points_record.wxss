@@ -1,0 +1,64 @@
+/* pages/index_main_card_detail_points_record/index_main_card_detail_points_record.wxss */
+
+.record_nav {
+  background: #fff;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  overflow: hidden;
+}
+
+.record_list {
+  width: 33%;
+  float: left;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.li_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+
+.li_text {
+  font-size: 30rpx;
+}
+
+.record_list_mid {
+  border-left: 1rpx solid #ddd;
+  border-right: 1rpx solid #ddd;
+}
+
+.data_list {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.data_img {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.record_data_mid {
+  margin: 20rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.record_data_right {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+}
+
+.right_time {
+  color: #aaa;
+}
