@@ -1,0 +1,45 @@
+/* pages/index_prize/index_prize.wxss */
+
+.prize_list {
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.list_left {
+  float: left;
+  font-size: 30rpx;
+}
+
+.list_right {
+  float: right;
+  font-size: 30rpx;
+}
+
+.left_name {
+  display: block;
+  margin: 20rpx;
+}
+
+.left_prize {
+  display: block;
+  margin: 20rpx;
+  color: #666;
+}
+
+.right_act {
+  display: inline-block;
+  padding: 10rpx 10rpx;
+  border-radius: 10rpx;
+  border: 1px solid #ffbe60;
+  position: relative;
+  top: 10rpx;
+  left: 170rpx;
+  color: #ffbe60;
+}
+
+.right_time {
+  display: block;
+  margin: 20rpx;
+  color: #aaa;
+}

@@ -1,0 +1,24 @@
+
+<!--pages/index_photo_confirm/index_photo_confirm.wxml-->
+<view class="con_head">
+  您在
+  <text class="con_head_name">????</text>
+  的交易拍照,请核对确认
+</view>
+<view class="con_title">
+  大陆开始奖励开始打飞机
+</view>
+<view class="con_area">
+  <view class="area_list">
+    <view class="list_left">拍照时间</view>
+    <view class="list_right">？？？</view>
+  </view>
+  <view class="area_list">
+    <view class="list_left">操作员</view>
+    <view class="list_right">？？？</view>
+  </view>
+  <view class="area_list">
+    <view class="list_left">订单号</view>
+    <view class="list_right">？？？</view>
+  </view>
+</view>

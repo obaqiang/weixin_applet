@@ -1,21 +1,27 @@
 {
   "pages": [
-
-  
-
-    "pages/login/login",
+    "pages/index_photo_confirm/index_photo_confirm",
     "pages/login/login",
     "pages/index/index",
     "pages/login/login",
     "pages/index_account/index_account",
     "pages/index_main/index_main",
+    "pages/index_photo/index_photo",
+    "pages/index_photo_confirm/index_photo_confirm",
+    "pages/index_bill/index_bill",
+    "pages/index_deposit/index_deposit",
     "pages/index_action/index_action",
     "pages/index_coupon/index_coupon",
+    "pages/index_coupon_detail/index_coupon_detail",
+    "pages/index_recharge/index_recharge",
+    "pages/index_sign_statics/index_sign_statics",
+    "pages/index_purchase_history/index_purchase_history",
+    "pages/index_red_packets/index_red_packets",
+    "pages/index_prize/index_prize",
     "pages/index_main_card/index_main_card",
     "pages/index_main_card_detail/index_main_card_detail",
     "pages/index_main_card_products/index_main_card_products",
     "pages/index_main_card_products_detail/index_main_card_products_detail",
-    
     "pages/index_main_card_detail_shop/index_main_card_detail_shop",
     "pages/index_main_card_detail_points/index_main_card_detail_points",
     "pages/index_main_card_detail_points_more/index_main_card_detail_points_more",

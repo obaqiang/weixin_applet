@@ -1,0 +1,2 @@
+/* pages/index_purchase_history/index_purchase_history.wxss */
+@import '../index_recharge/index_recharge.wxss';

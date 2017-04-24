@@ -1,0 +1,29 @@
+<!--pages/index_bill/index_bill.wxml-->
+<view class="bill_head">
+    <view class="bill_head_left bill_on">消费账单</view>
+    <view class="bill_head_right">充值账单</view>
+</view>
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{hotList}}">
+    <text class="tex_1">{{item.month}}</text>
+  </view>
+</scroll-view>
+
+<view class="bill_charge">
+    合计充值<text class="charge_num">000</text>元
+</view>
+
+<view class="table">
+  <view class="tr">
+    <view class="th">名称</view>
+    <view class="th">金额</view>
+    <view class="th ">时间</view>
+  </view>
+  <block wx:for="{{tableList}}" wx:key="{{code}}">
+    <view class="tr">
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.num}}</view>
+      <view class="td">{{item.time}}</view>
+    </view>
+  </block>
+</view>

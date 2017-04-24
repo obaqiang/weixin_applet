@@ -1,0 +1,24 @@
+/* pages/index_coupon_detail/index_coupon_detail.wxss */
+@import '../index_coupon/index_coupon.wxss';
+.co_de_img{
+    width: 700rpx;
+    height: 500rpx;
+    display: block;
+    margin: 20rpx auto;
+}
+.cou_title{
+    font-size: 30rpx;
+    font-weight: bold;
+    margin: 20rpx;
+}
+.coupon_area{
+    background: #fff;
+    width: 95%;
+    margin: auto;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    padding-left: 20rpx;
+}
+.area_list{
+    border-bottom: 1rpx solid #ddd;
+}

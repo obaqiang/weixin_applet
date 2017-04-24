@@ -1,0 +1,7 @@
+/* pages/index_sign_statics/index_sign_statics.wxss */
+@import '../index_red_packets/index_red_packets.wxss';
+.sign_line{
+    text-align: center;
+    color: #666;
+    font-size: 25rpx;
+}

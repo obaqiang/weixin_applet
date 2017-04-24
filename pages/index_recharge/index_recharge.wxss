@@ -1,0 +1,38 @@
+/* pages/index_recharge/index_recharge.wxss */
+@import '../index_main_card_detail_points_record/index_main_card_detail_points_record.wxss';
+.ch_area{
+    margin-top: 20rpx;
+}
+.ch_list{
+    overflow: hidden;
+    background: #fff;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    color: #666;
+    border-bottom: 1rpx solid #ddd;
+}
+.ch_list_left{
+    float: left;
+    width: 50%;
+    padding-left: 20rpx;
+}
+
+.ch_list_right{
+    float: right;
+    width: 50%;
+    padding-right: 20rpx;
+}
+.ch_name{
+    display: block;
+}
+.ch_prize{
+    display: block;
+}
+.ch_time{
+    display: block;
+    text-align: right;
+}
+.ch_status{
+    display: block;
+    text-align: right;
+}

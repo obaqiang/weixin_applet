@@ -1,0 +1,22 @@
+
+<!--pages/index_prize/index_prize.wxml-->
+<view class="prize_list">
+  <view class="list_left">
+    <text class="left_name">蛋糕</text>
+    <text class="left_prize">20.00元</text>
+  </view>
+  <view class="list_right">
+    <text class="right_act">兑换</text>
+    <text class="right_time"> 2016-05-06 12:55</text>
+  </view>
+</view>
+<view class="prize_list">
+  <view class="list_left">
+    <text class="left_name">蛋糕</text>
+    <text class="left_prize">20.00元</text>
+  </view>
+  <view class="list_right">
+    <text class="right_act">兑换</text>
+    <text class="right_time"> 2016-05-06 12:55</text>
+  </view>
+</view>

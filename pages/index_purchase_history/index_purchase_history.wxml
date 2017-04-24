@@ -1,0 +1,37 @@
+<!--pages/index_purchase_history/index_purchase_history.wxml-->
+<view class="record_nav">
+  <view class="record_list">
+    <image class="li_img" src="../../img/34px_34px_icon1.png"></image>
+    <text class="li_text">等待确认</text>
+  </view>
+  <view class="record_list record_list_mid">
+    <image class="li_img" src="../../img/34px_34px_icon2.png"></image>
+    <text class="li_text">已确认</text>
+  </view>
+  <view class="record_list">
+    <image class="li_img" src="../../img/34px_34px_icon3.png"></image>
+    <text class="li_text">已取消</text>
+  </view>
+</view>
+<view class="ch_area">
+  <view class="ch_list">
+    <view class="ch_list_left">
+      <text class="ch_name">测试商品100x2份</text>
+      <text class="ch_prize">20.00元</text>
+    </view>
+    <view class="ch_list_right">
+      <text class="ch_time">2016-05-06 12:55</text>
+      <text class="ch_status">已确认</text>
+    </view>
+  </view>
+  <view class="ch_list">
+    <view class="ch_list_left">
+      <text class="ch_name">测试商品100x2份</text>
+      <text class="ch_prize">20.00元</text>
+    </view>
+    <view class="ch_list_right">
+      <text class="ch_time">2016-05-06 12:55</text>
+      <text class="ch_status">已确认</text>
+    </view>
+  </view>
+</view>

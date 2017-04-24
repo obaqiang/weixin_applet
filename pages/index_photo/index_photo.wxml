@@ -1,0 +1,32 @@
+<!--pages/index_photo/index_photo.wxml-->
+<view class="record_nav">
+  <view class="record_list">
+    <image class="li_img" src="../../img/34px_34px_icon1.png"></image>
+    <text class="li_text">等待确认</text>
+  </view>
+  <view class="record_list record_list_mid">
+    <image class="li_img" src="../../img/34px_34px_icon2.png"></image>
+    <text class="li_text">已确认</text>
+  </view>
+  <view class="record_list">
+    <image class="li_img" src="../../img/34px_34px_icon3.png"></image>
+    <text class="li_text">已取消</text>
+  </view>
+</view>
+
+<view class="photo_list">
+  <view class="ph_left">
+    <text class="ph_time">2016-01-05 17:30</text>
+    <text class="ph_des">我们的花卉绝对新鲜耐看</text>
+  </view>
+  <view class="ph_right">
+    等待确认
+  </view>
+</view>
+
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{hotList}}">
+    <image src="{{item.pic}}" class="recommend_hot_image"></image>
+    
+  </view>
+</scroll-view>

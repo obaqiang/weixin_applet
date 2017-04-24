@@ -1,0 +1,14 @@
+
+<!--pages/index_deposit/index_deposit.wxml-->
+<view class="deposit_list">
+  <image class="de_head" src="../../img/140px_120px_background.png"></image>
+  <text class="de_name">炒鸡管理员</text>
+  <switch class="de_ch" checked/>
+</view>
+<view class="deposit_list">
+  <image class="de_head" src="../../img/140px_120px_background.png"></image>
+  <text class="de_name">炒鸡管理员</text>
+  <switch class="de_ch" checked/>
+</view>
+
+<view class="de_btn">确认</view>

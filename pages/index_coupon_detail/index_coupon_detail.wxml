@@ -1,0 +1,28 @@
+<!--pages/index_coupon_detail/index_coupon_detail.wxml-->
+<image class="co_de_img" src="../../img/yuantiao.jpg"></image>
+<view class="cou_area">
+    <view class="cou_list">
+        <view class="list_left">
+            <text class="list_prize">88</text>
+            <text class="list_time">使用期限 2016-7-18~2016-8-18</text>
+            <text class="list_limit">满￥0可用</text>
+        </view>
+        <image class="cou_list_img" src="../../img/180px_180px_3.png"></image>
+        <view class="list_num">￥88</view>
+    </view>
+    
+</view>
+
+<view class="cou_title">
+    限定消费以下产品
+</view>
+
+<view class="coupon_area">
+
+    <view class="area_list">
+        靖江猪肉脯
+    </view>
+    <view class="area_list">
+        靖江猪肉脯
+    </view>    
+</view>

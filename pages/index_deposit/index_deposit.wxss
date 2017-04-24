@@ -1,0 +1,32 @@
+/* pages/index_deposit/index_deposit.wxss */
+.de_head{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rpx;
+    left: 20rpx;
+}
+.deposit_list{
+    background: #fff;
+    line-height: 150rpx;
+    border-bottom: 1rpx solid #ddd;
+    position: relative;
+}
+.de_name{
+    margin-left: 150rpx;
+    font-size: 30rpx;
+}
+.de_ch{
+    float: right;
+    margin-right: 20rpx;
+}
+.de_btn{
+    width: 100%;
+    background: #cb2920;
+    text-align: center;
+    position: fixed;
+    color: #fff;
+    bottom: 0;
+    line-height: 100rpx;
+}
