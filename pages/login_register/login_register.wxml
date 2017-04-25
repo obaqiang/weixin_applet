@@ -1,0 +1,15 @@
+
+<!--pages/login_register/login_register.wxml-->
+<image class="re_img" src="../../img/750px_374px_background.png"></image>
+<view class="re_title">
+  让你到哪都是VIP
+</view>
+<view class="re_ex">
+  存在手机里的银行卡
+</view>
+<view class="re_content">
+  <view class="co_name">
+    <image class="name_img" src="../../img/36px_50px_icon1.png"></image>
+    <input class="name_in" placeholder="姓名"/>
+  </view>
+</view>

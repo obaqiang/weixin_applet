@@ -1,0 +1,25 @@
+/* pages/login_register/login_register.wxss */
+
+.re_img{
+    width: 100%;
+    height: 350rpx;
+}
+.re_title{
+    position: absolute;
+    top: 100rpx;
+    left: 200rpx;
+    color: #fff;
+    font-size: 50rpx;
+    font-weight: bold;
+}
+.re_ex{
+    position: absolute;
+    top: 260rpx;
+    left: 280rpx;
+    font-size: 25rpx;
+    color: #fff;
+}
+.name_img{
+    width: 40rpx;
+    height: 50rpx;
+}

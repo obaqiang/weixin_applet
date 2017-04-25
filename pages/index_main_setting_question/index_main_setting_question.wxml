@@ -1,0 +1,18 @@
+
+<!--pages/index_main_setting_question/index_main_setting_question.wxml-->
+<view class="qu_head">
+  <image class="qu_img" src="../../img/46px_46px_banben.png"></image>
+  <text>可能遇到的问题</text>
+</view>
+<view class="qu_area">
+  <view class="qu_list">
+    <text class="qu_area_ti">1、BD贵宾卡官网地址</text>
+    <view class="qu_area_co">www.bdvip.com</view>
+  </view>
+  <view class="qu_list">
+    <text class="qu_area_ti">2、如何成为BD贵宾卡会员</text>
+    <view class="qu_area_co">
+      用户可至3D贵宾卡合作商户，在商家的指导下进行app的下载并开卡
+    </view>
+  </view>
+</view>

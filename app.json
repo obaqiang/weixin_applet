@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index_photo_confirm/index_photo_confirm",
+    "pages/login_register/login_register",
     "pages/login/login",
+    "pages/login_register/login_register",
     "pages/index/index",
     "pages/login/login",
     "pages/index_account/index_account",
@@ -29,8 +30,10 @@
     "pages/index_main_card_detail_points_detail/index_main_card_detail_points_detail",
     "pages/index_main_card_package/index_main_card_package",
     "pages/index_main_message/index_main_message",
+    "pages/index_main_message_detail_charge/index_main_message_detail_charge",
     "pages/index_main_mine/index_main_mine",
-    "pages/index_main_setting/index_main_setting"
+    "pages/index_main_setting/index_main_setting",
+    "pages/index_main_setting_question/index_main_setting_question"
   ],
   "window": {
     "backgroundTextStyle": "light",

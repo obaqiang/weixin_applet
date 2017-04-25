@@ -1,0 +1,19 @@
+/* pages/index_main_message_detail_charge/index_main_message_detail_charge.wxss */
+.ul_area{
+    margin-top: 20rpx;
+}
+.ul{
+    background: #fff;
+    font-size: 30rpx;
+    line-height: 80rpx;
+}
+.li{
+    border-bottom: 1rpx solid #ddd;
+}
+.li_left{
+    margin-left: 20rpx;
+}
+.li_right{
+    float: right;
+    margin-right: 20rpx;
+}
