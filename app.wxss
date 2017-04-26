@@ -19,4 +19,5 @@ view{
 }
 page {
   background-color: #efeff4;
+  font-family: Microsoft YaHei
 }

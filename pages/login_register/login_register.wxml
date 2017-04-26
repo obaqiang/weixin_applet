@@ -12,4 +12,15 @@
     <image class="name_img" src="../../img/36px_50px_icon1.png"></image>
     <input class="name_in" placeholder="姓名"/>
   </view>
+  <view class="co_tel">
+    <image class="name_img" src="../../img/36px_50px_icon2.png"></image>
+    <input class="name_in" placeholder="手机号码"/>
+  </view>
+  <view class="co_ver">
+    <image class="name_img" src="../../img/36px_50px_icon3.png"></image>
+    <input class="name_in" placeholder="短信验证码"/>
+    <button class="btn_ver">验证码</button>
+  </view>
 </view>
+
+<button class="btn_reg">注册</button>

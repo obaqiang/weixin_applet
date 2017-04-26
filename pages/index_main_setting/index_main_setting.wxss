@@ -2,8 +2,8 @@
 @import "../index_main_mine/index_main_mine.wxss";
 .set_out{
     background: #fff;
-    font-size: 25rpx;
-    line-height: 60rpx;
+    font-size: 30rpx;
+    line-height: 70rpx;
     text-align: center;
     margin-top: 100rpx;
 }

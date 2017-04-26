@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/login_register/login_register",
+
     "pages/login/login",
     "pages/login_register/login_register",
     "pages/index/index",
@@ -32,6 +32,7 @@
     "pages/index_main_message/index_main_message",
     "pages/index_main_message_detail_charge/index_main_message_detail_charge",
     "pages/index_main_mine/index_main_mine",
+    "pages/index_main_mine_payment/index_main_mine_payment",
     "pages/index_main_setting/index_main_setting",
     "pages/index_main_setting_question/index_main_setting_question"
   ],

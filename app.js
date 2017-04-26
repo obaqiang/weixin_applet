@@ -26,6 +26,6 @@ App({
   },
   globalData:{
     userInfo:null,
-    test_url :'http://testapi.bdvip.net'
+    test_url :'http://192.168.1.170:82'
   }
 })

@@ -14,6 +14,7 @@ page{
   float: left;
   width: 50%;
   text-align: center;
+  font-size: 30rpx;
 }
 
 .head_action {
@@ -22,6 +23,7 @@ page{
   text-align: center;
   border-left: 1px solid #ddd;
   box-sizing: border-box;
+  font-size: 30rpx;
 }
 
 .head_pay image {
@@ -44,6 +46,7 @@ page{
   padding: 5rpx 10rpx;
   background-color: #cdcdcd;
   margin-top: 25rpx;
+  font-size: 30rpx;
 }
 
 .mes_squ {
