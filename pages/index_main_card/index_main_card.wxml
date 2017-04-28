@@ -1,38 +1,52 @@
 
 <!--index_main_card.wxml-->
-<view class="nav_head">
-  <image src="../../img/178px_44px_logo.png"></image>
-  <view class="main_head_search">
-    <image src="../../img/26px_26px_iconQ.png"></image>
-    <input />
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: 100vh" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <view class="nav_head">
+    <image src="../../img/178px_44px_logo.png"></image>
+    <view class="main_head_search">
+      <image src="../../img/26px_26px_iconQ.png"></image>
+      <input />
+    </view>
+    <view class="main_head_sao">
+      <image src="../../img/40px_40px_sao.png"></image>
+      <text>扫一扫</text>
+    </view>
+    <view class="main_head_sao">
+      <image src="../../img/40px_40px_pay.png"></image>
+      <text>付款码</text>
+    </view>
   </view>
-  <view class="main_head_sao">
-    <image src="../../img/40px_40px_sao.png"></image>
-    <text>扫一扫</text>
+  <image style="width:100%;height:200rpx;margin-top:85rpx;" src="../../img/banner1.png"></image>
+  <view class="card_area">
+    <block wx:for="{{Vips}}">
+      <template name="odd">
+        <view class="card_list">
+          <image class="card_in" src="{{item.tl_imgurl}}"></image>
+          <image class="card_out" src="{{item.tl_bagurl1}}"></image>
+          <text class="card_shop_name">{{item.store_name}}</text>
+          <text class="card_shop_num">{{item.vip_sn}}</text>
+          <text class="card_shop_type">{{item.cardtype_name}}</text>
+          <text class="card_shop_prize">{{item.BalanceArray}}</text>
+          <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png"></image>
+        </view>
+      </template>
+      <template name="even">
+        <view class="card_list_c">
+          <image class="card_in_c" src="{{item.tl_imgurl}}"></image>
+          <image class="card_out_c" src="{{item.tl_bagurl}}"></image>
+          <text class="card_shop_name te_c">{{item.store_name}}</text>
+          <text class="card_shop_num te_c">{{item.vip_sn}}</text>
+          <text class="card_shop_type te_c">{{item.cardtype_name}}</text>
+          <text class="card_shop_prize te_c">{{item.BalanceArray}}</text>
+          <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png"></image>
+        </view>
+      </template>
+      <template is="{{index % 2 == 0 ? 'even' : 'odd'}}" data="{{item}}" />
+    </block>
   </view>
-  <view class="main_head_sao">
-    <image src="../../img/40px_40px_pay.png"></image>
-    <text>付款码</text>
-  </view>
-</view>
-<image style="width:100%;height:200rpx;margin-top:85rpx;" src="../../img/banner1.png"></image>
-<view class="card_area">
-  <view class="card_list">
-    <image class="card_in" src="../../img/460px_274px_card4.png"></image>
-    <image class="card_out" src="../../img/478px_300px_card1.png"></image>
-    <text class="card_shop_name">无线餐饮测试系统</text>
-    <text class="card_shop_num">JXC0000046</text>
-    <text class="card_shop_type">钻石卡</text>
-    <text class="card_shop_prize">储值2500.00元 次卡0次</text>
-    <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png"></image>
-  </view>
-  <view class="card_list_c">
-    <image class="card_in_c" src="../../img/460px_274px_card6.png"></image>
-    <image class="card_out_c" src="../../img/478px_300px_card2.png"></image>
-    <text class="card_shop_name te_c">无线餐饮测试系统</text>
-    <text class="card_shop_num te_c">JXC0000046</text>
-    <text class="card_shop_type te_c">钻石卡</text>
-    <text class="card_shop_prize te_c">储值2500.00元 次卡0次</text>
-    <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png"></image>
-  </view>
+</scroll-view>
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
 </view>

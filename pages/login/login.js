@@ -148,7 +148,9 @@ Page({
           }
           var token = rdata.Data.Token;
           console.log(token);
+          app.globalData.token = token;
           wx.switchTab({
+
             url: '../index_main_card/index_main_card'
           })
 

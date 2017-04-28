@@ -26,6 +26,8 @@ App({
   },
   globalData:{
     userInfo:null,
-    test_url :'http://192.168.1.170:82'
+    test_url :'http://192.168.1.170:82',
+    token:'',
+    member_id:''
   }
 })
