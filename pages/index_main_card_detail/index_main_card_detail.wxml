@@ -1,82 +1,81 @@
 
 <!--pages/index_main_card_detail/index_main_card_detail.wxml-->
 <view class="card_detail_nav">
-  <view class="card_detail_nav_left">
+  <view class="card_detail_nav_left" bindtap="proJump">
     <image class="nav_icon" src="../../img/54px_54px_icon1.png"></image>
     <text class="nav_text">全部商品</text>
   </view>
-  <view class="card_detail_nav_right">
+  <view class="card_detail_nav_right" bindtap="pacJump">
     <image class="nav_icon" src="../../img/54px_54px_icon2.png"></image>
     <text class="nav_text">套餐充值</text>
   </view>
 </view>
 <view class="mine_list list_one">
-  <view class="list_body">
+  <view class="list_body" bindtap="accJump">
     <text class="list_body_change">余额</text>
     <image class="img_2" src="../../img/16px_26px_V.png"></image>
-    <text class="change_num">￥0.00</text>
+    <text class="change_num">￥{{balance}}</text>
   </view>
 </view>
 <view class="mine_list">
-  <view class="list_body">
+  <view class="list_body" bindtap="poJump">
     <text class="list_body_change">积分兑换</text>
     <image class="img_2" src="../../img/16px_26px_V.png"></image>
-    <text class="change_num">123132</text>
+    <text class="change_num">{{end_integral}}</text>
   </view>
 </view>
-
 <scroll-view class="recommend_scroll_x_box" scroll-x="true">
-  <view class="recommend_hot_box" wx:for="{{hotList}}">
-    <image src="{{item.pic}}" class="recommend_hot_image"></image>
-    <text class="coupon_tex_1">10</text>
-    <text class="coupon_tex_2">元</text>
-    <text class="coupon_tex_3">(满200可用)</text>
-    <text class="coupon_tex_4">点击\n领取</text>
+  <view class="recommend_hot_box" wx:for="{{Tickets}}" wx:if="{{item.selected ==0}}">
+
+    <!--微信小程序bug  dataset绑定在view标签上时无法获取到数据-->
+    <image src="../../img/204px_102px_quanbg.png" class="recommend_hot_image" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick"></image>
+    <text class="coupon_tex_1" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">{{item.ticket_money}}</text>
+    <text class="coupon_tex_2" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">元</text>
+    <text class="coupon_tex_3" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">(满{{item.condition_money}}可用)</text>
+    <text class="coupon_tex_4" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">点击\n领取</text>
   </view>
 </scroll-view>
-
-
 <view class="vip_text">
   会员专享
 </view>
 <view class="vip_area">
-  <view class="area_list">
+  <view class="area_list" bindtap="actJump">
     <image class="area_list_img" src="../../img/64px_huodong.png"></image>
     <text class="area_list_tex">活动</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="couJump">
     <image class="area_list_img" src="../../img/64px_youhuiquan.png"></image>
     <text class="area_list_tex">优惠券</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="redJump">
     <image class="area_list_img" src="../../img/64px_hongbao.png"></image>
     <text class="area_list_tex">红包</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="priJump">
     <image class="area_list_img" src="../../img/64px_jiangpin.png"></image>
     <text class="area_list_tex">奖品</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="recJump">
     <image class="area_list_img" src="../../img/64px_chongzhi.png"></image>
     <text class="area_list_tex">充值记录</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="purJump">
     <image class="area_list_img" src="../../img/64px_xiaofei.png"></image>
     <text class="area_list_tex">消费记录</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="billJump">
     <image class="area_list_img" src="../../img/64px_zhangdan.png"></image>
     <text class="area_list_tex">账单</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="siJump">
     <image class="area_list_img" src="../../img/64px_qiandan.png"></image>
     <text class="area_list_tex">签单</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="depJump">
     <image class="area_list_img" src="../../img/64px_tuoguuan.png"></image>
     <text class="area_list_tex">托管</text>
   </view>
-  <view class="area_list">
+  <view class="area_list" bindtap="phoJump">
     <image class="area_list_img" src="../../img/64px_paizhao.png"></image>
     <text class="area_list_tex">交易拍照</text>
   </view>

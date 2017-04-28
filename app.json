@@ -4,7 +4,6 @@
     "pages/login/login",
     "pages/login_register/login_register",
     "pages/index/index",
-    "pages/login/login",
     "pages/index_account/index_account",
     "pages/index_main/index_main",
     "pages/index_photo/index_photo",
@@ -13,6 +12,7 @@
     "pages/index_deposit/index_deposit",
     "pages/index_action/index_action",
     "pages/index_coupon/index_coupon",
+    "pages/index_prize_list/index_prize_list",
     "pages/index_coupon_detail/index_coupon_detail",
     "pages/index_recharge/index_recharge",
     "pages/index_sign_statics/index_sign_statics",
@@ -39,9 +39,8 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#cb2920",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "贵宾卡",
     "navigationBarTextStyle": "#fff"
-
   },
   "tabBar": {
     "color": "#a9b7b7",

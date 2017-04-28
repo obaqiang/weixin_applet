@@ -1,6 +1,6 @@
 
 <!--index_main_card.wxml-->
-<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: 100vh" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
   <view class="nav_head">
     <image src="../../img/178px_44px_logo.png"></image>
     <view class="main_head_search">
@@ -21,19 +21,19 @@
     <block wx:for="{{Vips}}">
       <template name="odd">
         <view class="card_list">
-          <image class="card_in" src="{{item.tl_imgurl}}"></image>
-          <image class="card_out" src="{{item.tl_bagurl1}}"></image>
+          <image class="card_in" src="{{item.tl_imgurl}}" bindtap="jumpDetail" data-vip_id="{{item.id}}" data-store_id="{{item.store_id}}"></image>
+          <image class="card_out" src="{{item.tl_bagurl1}}" bindtap="jumpDetail" data-vip_id="{{item.id}}" data-store_id="{{item.store_id}}"></image>
           <text class="card_shop_name">{{item.store_name}}</text>
           <text class="card_shop_num">{{item.vip_sn}}</text>
           <text class="card_shop_type">{{item.cardtype_name}}</text>
           <text class="card_shop_prize">{{item.BalanceArray}}</text>
-          <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png"></image>
+          <image class="card_shop_tel" src="../../img/50px_50px_icon_P.png" ></image>
         </view>
       </template>
       <template name="even">
         <view class="card_list_c">
-          <image class="card_in_c" src="{{item.tl_imgurl}}"></image>
-          <image class="card_out_c" src="{{item.tl_bagurl}}"></image>
+          <image class="card_in_c" src="{{item.tl_imgurl}}" bindtap="jumpDetail" data-vip_id="{{item.id}}" data-store_id="{{item.store_id}}"></image>
+          <image class="card_out_c" src="{{item.tl_bagurl}}" bindtap="jumpDetail" data-vip_id="{{item.id}}" data-store_id="{{item.store_id}}"></image>
           <text class="card_shop_name te_c">{{item.store_name}}</text>
           <text class="card_shop_num te_c">{{item.vip_sn}}</text>
           <text class="card_shop_type te_c">{{item.cardtype_name}}</text>
