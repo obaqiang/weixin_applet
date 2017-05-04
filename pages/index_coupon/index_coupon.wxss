@@ -76,3 +76,7 @@
     font-size: 40rpx;
 
 }
+.on{
+  color: #cb2920
+}
+

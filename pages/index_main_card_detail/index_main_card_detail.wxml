@@ -25,14 +25,14 @@
   </view>
 </view>
 <scroll-view class="recommend_scroll_x_box" scroll-x="true">
-  <view class="recommend_hot_box" wx:for="{{Tickets}}" wx:if="{{item.selected ==0}}">
+  <view class="recommend_hot_box" wx:for="{{Tickets}}" wx:if="{{item.selected ==0}}" hidden="{{item.ishidden}}">
 
     <!--微信小程序bug  dataset绑定在view标签上时无法获取到数据-->
-    <image src="../../img/204px_102px_quanbg.png" class="recommend_hot_image" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick"></image>
-    <text class="coupon_tex_1" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">{{item.ticket_money}}</text>
-    <text class="coupon_tex_2" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">元</text>
-    <text class="coupon_tex_3" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">(满{{item.condition_money}}可用)</text>
-    <text class="coupon_tex_4" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">点击\n领取</text>
+    <image src="../../img/204px_102px_quanbg.png" class="recommend_hot_image" data-num="{{item.num}}" data-avg_num="{{item.avg_num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick"></image>
+    <text class="coupon_tex_1" data-avg_num="{{item.avg_num}}" data-num="{{item.num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">{{item.ticket_money}}</text>
+    <text class="coupon_tex_2" data-avg_num="{{item.avg_num}}" data-num="{{item.num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">元</text>
+    <text class="coupon_tex_3" data-avg_num="{{item.avg_num}}" data-num="{{item.num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">(满{{item.condition_money}}可用)</text>
+    <text class="coupon_tex_4" data-avg_num="{{item.avg_num}}" data-num="{{item.num}}" data-out_num="{{item.out_num}}" data-ticket_id="{{item.id}}" bindtap="couPick">点击\n领取</text>
   </view>
 </scroll-view>
 <view class="vip_text">

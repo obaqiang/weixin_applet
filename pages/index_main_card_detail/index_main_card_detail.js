@@ -56,7 +56,7 @@ Page({
         'token': token
       },
       success: function (res) {
-        console.log(res.data);
+        // console.log(res.data);
         that.setData({
           balance: res.data.Data.Vip.end_money,
           cardtype_id: res.data.Data.Vip.cardtype_id,
@@ -91,16 +91,25 @@ Page({
         'token': token
       },
       success: function (res) {
-        console.log(res.data);
+        // console.log(res.data);
+        var Tickets = res.data.Data.Tickets;
+        for (var i = 0; i < Tickets.length - 1; i++) {
 
+          Tickets[i].num = i;
+          Tickets[i].ishidden = false;
+        }
+        // console.log(Tickets);
         that.setData({
           Tickets: res.data.Data.Tickets
 
         });
+
+
+
       }
     })
   },
-  PickupTicket: function (staff_id, store_id, ticket_id, token) {
+  PickupTicket: function (staff_id, store_id, ticket_id, token, num) {
     var that = this;
     wx.request({
       url: app.globalData.test_url + '/api/ticket/PickupTicket',
@@ -116,19 +125,40 @@ Page({
         'token': token
       },
       success: function (res) {
-        console.log('staff_id=' + staff_id + '&store_id=' + store_id + ',ticket_id=' + ticket_id)
-        console.log(res.data);
+        // console.log(res.data);
+        if (res.data.Data.ErrorCode == 0) {
+          for (var i = 0; i < that.data.Tickets.length - 1; i++) {
+
+            if (num == that.data.Tickets[i].num) {
+              //小程序奇怪的地方
+              var param = {};
+              var string = "Tickets[" + i + "].ishidden";
+              param[string] = true;
+              // console.log(param);
+              that.setData(param);
+            }
+            wx.showToast({
+              title: '优惠券领取成功',
+              icon: 'success',
+              duration: 1200
+            })
+          }
+        } else {
+          var ErrorMessage = res.data.Data.ErrorMessage
+          wx.showToast({
+            title: ErrorMessage,
+            icon: 'success',
+            duration: 1200
+          })
+        }
 
       }
     })
   },
   couPick: function (event) {//领取优惠券
     // 小程序的event.target.dataset有bug   
-    console.log('里面的staff_id：' + app.globalData.member_id);
-    var ticket_id = event.target.dataset.ticket_id;
-    console.log('里面的ticket_id：' + ticket_id);
-    
-    this.PickupTicket(event.target.dataset.staff_id, this.data.store_id, event.target.dataset.ticket_id, app.globalData.token);
+
+    this.PickupTicket(app.globalData.member_id, this.data.store_id, event.target.dataset.ticket_id, app.globalData.token, event.target.dataset.num);
   },
 
   proJump: function () {//全部商品跳转
@@ -159,12 +189,12 @@ Page({
   },
   couJump: function () {//优惠券页面跳转
     wx.navigateTo({
-      url: '../index_coupon/index_coupon'
+      url: '../index_coupon/index_coupon?vip_id=' + this.data.vip_id + '&store_id=' + this.data.store_id
     })
   },
   redJump: function () {//红包页面跳转
     wx.navigateTo({
-      url: '../index_red_packets/index_red_packets'
+      url: '../index_red_packets/index_red_packets?vip_id=' + this.data.vip_id
     })
   },
   priJump: function () {//奖品页面跳转

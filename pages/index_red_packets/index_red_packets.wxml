@@ -7,7 +7,7 @@
 </view>
 <scroll-view class="recommend_scroll_x_box" scroll-x="true">
   <view class="recommend_hot_box" wx:for="{{hotList}}">
-    <text class="tex_1">{{item.month}}</text>
+    <text class="{{item.index == mon_status ? 'tex_on':'tex_1'}}" data-index="{{item.index}}" bindtap="monCho">{{item.month}}</text>
   </view>
 </scroll-view>
 <view class="bill_charge">

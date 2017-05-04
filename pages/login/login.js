@@ -15,7 +15,7 @@ Page({
     this.setData({
       tel: e.detail.value
     })
-    console.log('需要的tel:' + this.data.tel);
+
   },
   pwdChange: function (e) {
     this.setData({
@@ -30,10 +30,10 @@ Page({
     })
   },
   remPwd: function (e) {//记住密码
-    console.log(11);
+
     var page = this;
     if (page.data.remimg == '../../img/34px_34px_nohook.png') {
-      console.log(22);
+
       page.setData({
         remimg: '../../img/34px_34px_hook.png',
         remstatus: true
@@ -63,7 +63,7 @@ Page({
       //获取数据的key
       key: 'tel',
       success: function (res) {
-        console.log(res)
+
         that.setData({
           //
           tel: res.data,
@@ -74,15 +74,15 @@ Page({
        * 失败会调用
        */
       fail: function (res) {
-        console.log(res)
-        console.log('号码获取失败');
+
+        // console.log('号码获取失败');
       }
     })
     wx.getStorage({
       //获取数据的key
       key: 'pwd',
       success: function (res) {
-        console.log(res)
+
         that.setData({
           //
           pwd: res.data
@@ -92,8 +92,8 @@ Page({
        * 失败会调用
        */
       fail: function (res) {
-        console.log(res)
-        console.log('密码获取失败');
+
+        // console.log('密码获取失败');
       }
     })
   },
@@ -116,22 +116,22 @@ Page({
         var rdata = res.data;
 
         if (rdata.Data.ErrorCode == 0) {
-          console.log('正常跳转页面逻辑');
+          // console.log('正常跳转页面逻辑');
           if (page.data.remstatus == true) {//记住密码
             wx.setStorage({
               key: 'tel',
               data: page.data.tel,
               success: function (res) {
-                console.log(res);
-                console.log('手机号码存储成功');
+                // console.log(res);
+                // console.log('手机号码存储成功');
               }
             })
             wx.setStorage({
               key: 'pwd',
               data: page.data.pwd,
               success: function (res) {
-                console.log(res);
-                console.log('密码存储成功');
+                // console.log(res);
+                // console.log('密码存储成功');
               }
             })
 
@@ -144,10 +144,10 @@ Page({
                 })
               }
             })
-            console.log(22);
+            // console.log(22);
           }
           var token = rdata.Data.Token;
-          console.log(token);
+          // console.log(token);
           app.globalData.token = token;
           wx.switchTab({
 
@@ -155,7 +155,7 @@ Page({
           })
 
         } else if (rdata.Data.ErrorCode == 4) {
-          console.log('需要填写验证码逻辑');
+          // console.log('需要填写验证码逻辑');
           var ErrorMessage = rdata.ErrorMessage;
 
           wx.showToast({

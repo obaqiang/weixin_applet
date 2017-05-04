@@ -1,6 +1,9 @@
 // pages/index_coupon_detail/index_coupon_detail.js
 Page({
-  data:{},
+  data:{
+
+    
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },

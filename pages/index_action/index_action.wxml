@@ -1,23 +1,48 @@
 
 <!--pages/index_action/index_action.wxml-->
 <view class="action_acc">
-  <view class="acc_left">
+  <view class="{{titleshow == 'left' ? 'acc_left_on':'acc_left'}}" bindtap="leftCho">
     <text>全部活动</text>
-    <image class="acc_icon" src="../../img/16px_10px_g.png"></image>
+    <image class="acc_icon" wx:if="{{titleshow=='none'||titleshow=='right'}}" src="../../img/16px_10px_g.png"></image>
+    <image class="acc_icon" wx:if="{{titleshow=='left'}}" src="../../img/16px_10px_red.png"></image>
   </view>
-  <view class="acc_right">
+  <view class="{{titleshow == 'right' ? 'acc_right_on':'acc_right'}}" bindtap="rightCho">
     <text>所有类型</text>
-    <image class="acc_icon" src="../../img/16px_10px_g.png"></image>
+    <image class="acc_icon" wx:if="{{titleshow=='none'||titleshow=='left'}}" src="../../img/16px_10px_g.png"></image>
+    <image class="acc_icon" wx:if="{{titleshow=='right'}}" src="../../img/16px_10px_red.png"></image>
   </view>
 </view>
-<view class="acc_content">
-  <image class="con_img_1" src="http://testimg.bdvip.net//lottery/2017/4/353f9d8376d04ffd9707aea751fa501a.jpg"></image>
-  <image class="con_img_2" src="../../img/120px_120px_jinxingzhong.png"></image>
-  <view class="acc_status">未参与</view>
-  <view class="con_des">
-    <view class="des_left">恭喜发财，大吉大利</view>
-    <view class="des_right">恭喜发财，大吉大利</view>
-
-
-  </view>
+<view wx:if="{{titleshow=='left'}}" class="left_show">
+  <text class="on" bindtap="leftAct">全部活动</text>
+  <text bindtap="leftAct">进行中</text>
+  <text bindtap="leftAct">未开始</text>
 </view>
+<view wx:elif="{{titleshow=='right'}}" class="left_show">
+  <text class="on" bindtap="rightAct">全部</text>
+  <text bindtap="rightAct">红包</text>
+  <text bindtap="rightAct">转盘</text>
+  <text bindtap="rightAct">文章</text>
+  <text bindtap="rightAct">报名</text>
+</view>
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <view class="acc_content" wx:for="{{ActivityCommonList}}">
+
+    <!--<image class="con_img_1" src="{{item.thumb}}"></image>-->
+    <image wx:if="{{item.status == 4}}" class="con_img_2" src="../../img/120px_120px_over.png"></image>
+    <image wx:elif="{{item.status == 3}}" class="con_img_2" src="../../img/120px_120px_over.png"></image>
+    <image wx:elif="{{item.status == 6}}" class="con_img_2" src="../../img/120px_120px_jinxingzhong.png"></image>
+    <image wx:elif="{{item.status == 5}}" class="con_img_2" src="../../img/120px_120px_weikaishi.png"></image>
+    <image class="con_img_2" src="../../img/120px_120px_weikaishi.png"></image>
+    <view class="acc_status" wx:if="{{item.is_play == 0}}"> 未参与 </view>
+    <view class="acc_status" wx:elif="{{item.is_play == 1}}"> 已参与</view>
+    <view class="con_des">
+      <view class="des_left">{{item.title}}</view>
+      <view class="des_right">{{item.content}}</view>
+    </view>
+  </view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>
+</scroll-view>

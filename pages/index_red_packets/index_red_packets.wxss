@@ -56,6 +56,15 @@ page {
   color: #666;
 }
 
+.tex_on {
+  font-size: 30rpx;
+  background: #cb2920;
+  display: inline-block;
+  width: 100rpx;
+  padding: 10rpx;
+  color: #fff;
+}
+
 .bill_charge {
   overflow: hidden;
 }
@@ -80,8 +89,6 @@ page {
   color: #666;
   margin-right: 20rpx;
 }
-
-
 
 .tr {
   display: flex;

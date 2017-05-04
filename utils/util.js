@@ -1,21 +1,19 @@
-function formatTime(date) {
-  var year = date.getFullYear()
-  var month = date.getMonth() + 1
-  var day = date.getDate()
-
-  var hour = date.getHours()
-  var minute = date.getMinutes()
-  var second = date.getSeconds()
-
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+function userDate(uData) {
+	var myDate = new Date(uData * 1000);
+	var year = myDate.getFullYear();
+	var month = myDate.getMonth() + 1;
+	var day = myDate.getDate();
+	return year + '-' + month + '-' + day;
 }
-
-function formatNumber(n) {
-  n = n.toString()
-  return n[1] ? n : '0' + n
+//当前时间转时间戳
+function datetime_to_unix(datetime) {
+	var tmp_datetime = datetime.replace(/:/g, '-');
+	tmp_datetime = tmp_datetime.replace(/ /g, '-');
+	var arr = tmp_datetime.split("-");
+	var now = new Date(Date.UTC(arr[0], arr[1] - 1, arr[2], arr[3] - 8, arr[4], arr[5]));
+	return parseInt(now.getTime() / 1000);
 }
-
 module.exports = {
-  formatTime: formatTime
-}
+  userDate: userDate,
+  datetime_to_unix:datetime_to_unix
+};
