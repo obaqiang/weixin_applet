@@ -87,3 +87,20 @@ page {
     top: 100rpx;
     right: 30rpx;
 }
+.choose_area{
+  position:absolute;
+  width: 350rpx;
+  background: #fff;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  right: 0;
+  text-align: center;
+  z-index: 100;
+}
+.choose_area text{
+  display: block;
+  border-bottom: 1rpx solid #ddd;
+}
+.choose_area text:hover{
+  background: #ddd
+}

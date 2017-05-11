@@ -1,1 +1,35 @@
 /* pages/index_feedbacks/index_feedbacks.wxss */
+
+.text_area {
+  background: #fff;
+  width: 90%;
+  height: 350rpx;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+
+.img_upload_icon {
+  width: 150rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 300rpx;
+  right: 40rpx;
+}
+
+.sug {
+  font-size: 30rpx;
+  color: #b2b2b2;
+  display: block;
+  width: 95%;
+  margin: 20rpx auto;
+}
+
+.btn {
+  background: #cb2920;
+  width: 95%;
+  margin: 30rpx auto;
+  color: #fff;
+  font-size: 30rpx;
+}

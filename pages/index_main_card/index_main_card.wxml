@@ -7,10 +7,10 @@
       <image src="../../img/26px_26px_iconQ.png"></image>
       <input />
     </view>
-    <view class="main_head_sao">
+    <!--<view class="main_head_sao">
       <image src="../../img/40px_40px_sao.png"></image>
       <text>扫一扫</text>
-    </view>
+    </view>-->
     <view class="main_head_sao">
       <image src="../../img/40px_40px_pay.png"></image>
       <text>付款码</text>

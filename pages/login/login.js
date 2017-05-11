@@ -112,7 +112,7 @@ Page({
         'content-type': 'application/json'
       },
       success: function (res) {
-
+        console.log(res);
         var rdata = res.data;
 
         if (rdata.Data.ErrorCode == 0) {
@@ -147,8 +147,14 @@ Page({
             // console.log(22);
           }
           var token = rdata.Data.Token;
+          var birthday = rdata.Data.Member.birthday;
+          birthday = birthday.slice(0,10)
           // console.log(token);
           app.globalData.token = token;
+          app.globalData.phone = rdata.Data.Member.phone;
+          app.globalData.birthday = birthday;
+          app.globalData.thumb = rdata.Data.Member.thumb;
+          app.globalData.member_name = rdata.Data.Member.member_name
           wx.switchTab({
 
             url: '../index_main_card/index_main_card'

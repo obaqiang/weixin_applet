@@ -2,15 +2,16 @@
 <!--pages/index_main_mine/index_main_mine.wxml-->
 <view class="head_msg">
   <image class="head_icon " src="../../img/146px_146px_moren.png"></image>
-  <view class="head_text">好帅的强</view>
+
+  <view class="head_text">{{member_name}}</view>
   <view class="head_data">
     <view class="head_tel">
       <view>手机号</view>
-      <view>130321111111</view>
+      <view>{{phone}}</view>
     </view>
     <view class="head_birth">
       <view class="classname">生日</view>
-      <view class="classname">1991-08-05</view>
+      <view class="classname">{{birthday}}</view>
     </view>
   </view>
 </view>
