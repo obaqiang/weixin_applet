@@ -36,3 +36,9 @@
     display: block;
     text-align: right;
 }
+.on{
+  color: #cb2920
+}
+.record_list{
+    font-size: 30rpx;
+}

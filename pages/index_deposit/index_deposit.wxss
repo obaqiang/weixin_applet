@@ -30,3 +30,10 @@
     bottom: 0;
     line-height: 100rpx;
 }
+.de_wait{
+  color: #666;
+  font-size: 25rpx;
+  position: absolute;
+  right: 150rpx;
+
+}

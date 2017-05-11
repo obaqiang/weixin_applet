@@ -199,40 +199,45 @@ Page({
   },
   priJump: function () {//奖品页面跳转
     wx.navigateTo({
-      url: '../index_prize/index_prize'
+      url: '../index_prize/index_prize?vip_id='+this.data.vip_id+'&store_id='+this.data.store_id
     })
   },
   recJump: function () {//充值记录跳转
     wx.navigateTo({
-      url: '../index_recharge/index_recharge'
+      url: '../index_recharge/index_recharge?vip_id='+this.data.vip_id+'&store_id='+this.data.store_id
     })
   },
   purJump: function () {//消费记录跳转
     wx.navigateTo({
-      url: '../index_purchase_history/index_purchase_history'
+      url: '../index_purchase_history/index_purchase_history?vip_id='+this.data.vip_id+'&store_id='+this.data.store_id
     })
   },
   billJump: function () {//账单页面跳转
     wx.navigateTo({
-      url: '../index_bill/index_bill'
+      url: '../index_bill/index_bill?vip_id='+this.data.vip_id+'&store_id='+this.data.store_id
     })
   },
   siJump: function () {//签单页面跳转
     wx.navigateTo({
-      url: '../index_sign_statics/index_sign_statics'
+      url: '../index_sign_statics/index_sign_statics?vip_id='+this.data.vip_id+'&store_id='+this.data.store_id
     })
   },
   depJump: function () {//托管页面跳转
     wx.navigateTo({
-      url: '../index_deposit/index_deposit'
+      url: '../index_deposit/index_deposit?store_id=' + this.data.store_id
     })
   },
   phoJump: function () {//交易拍照页面跳转
     wx.navigateTo({
-      url: '../index_photo/index_photo'
+      url: '../index_photo/index_photo?vip_id=' + this.data.vip_id + '&store_id=' + this.data.store_id
     })
   },
 
+  shopIntro:function(){//商家简介页面跳转
+    wx.navigateTo({
+      url: '../index_main_card_detail_shop/index_main_card_detail_shop?vip_id=' + this.data.vip_id 
+    })
+  },
 
 
 

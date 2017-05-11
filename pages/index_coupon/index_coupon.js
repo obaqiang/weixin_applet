@@ -167,7 +167,7 @@ Page({
     var that = this;
     // 页面初始化 options为页面跳转所带来的参数
     this.GetVipTickets(options.store_id, options.vip_id, that.data.type, that.data.page_num, that.data.page_size, app.globalData.token)
-    var that = this;
+
     wx.getSystemInfo({
       success: function (res) {
 

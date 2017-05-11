@@ -1,37 +1,37 @@
 /* pages/index_bill/index_bill.wxss */
 @import '../index_red_packets/index_red_packets.wxss';
-page{
-    background: #fff;
-}
-.bill_head{
-    font-size: 30rpx;
-    overflow: hidden;
-    width: 90%;
-    border: 1px solid #cb2920;
-    border-radius: 10rpx;
-    line-height: 50rpx;
-    margin: 20rpx auto;
 
+page {
+  background: #fff;
 }
-.bill_head_left{
-    width: 50%;
-    float: left;
-    text-align: center;
+
+.bill_head {
+  font-size: 30rpx;
+  overflow: hidden;
+  width: 90%;
+  border: 1px solid #cb2920;
+  border-radius: 10rpx;
+  line-height: 50rpx;
+  margin: 20rpx auto;
 }
-.bill_head_right{
-    width: 50%;
-    float: left;
-    text-align: center;
+
+.bill_head view {
+  width: 50%;
+  float: left;
+  text-align: center;
 }
-.bill_on{
-    background: #cb2920;
-    color: #fff;
+
+.bill_on {
+  background: #cb2920;
+  color: #fff;
 }
-.bill_charge{
-    padding: 0 50rpx;
-    font-size: 25rpx;
-    color: #666;
+
+.bill_charge {
+  padding: 0 50rpx;
+  font-size: 25rpx;
+  color: #666;
 }
-.charge_num{
-    font-size: 30rpx;
+
+.charge_num {
+  font-size: 30rpx;
 }

@@ -1,23 +1,26 @@
-<!--pages/index_sign_statics/index_sign_statics.wxml-->
 
+<!--pages/index_sign_statics/index_sign_statics.wxml-->
 <scroll-view class="recommend_scroll_x_box" scroll-x="true">
   <view class="recommend_hot_box" wx:for="{{hotList}}">
-    <text class="tex_1">{{item.month}}</text>
+     <text class="{{item.index == mon_status ? 'tex_on':'tex_1'}}" data-index="{{item.index}}" bindtap="monCho">{{item.month}}</text>
   </view>
 </scroll-view>
-
-<view class="sign_line" >累计签单:<text class="charge_num">0000</text>元</view>
-<view class="table">
-  <view class="tr">
-    <view class="th">名称</view>
-    <view class="th">金额</view>
-    <view class="th ">时间</view>
-  </view>
-  <block wx:for="{{tableList}}" wx:key="{{code}}">
-    <view class="tr">
-      <view class="td">{{item.name}}</view>
-      <view class="td">{{item.num}}</view>
-      <view class="td">{{item.time}}</view>
-    </view>
-  </block>
+<view class="sign_line">累计签单:
+  <text class="charge_num">{{TotolAmount}}</text>元
 </view>
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <view class="table">
+    <view class="tr">
+      <view class="th">名称</view>
+      <view class="th">金额</view>
+      <view class="th ">时间</view>
+    </view>
+    <block wx:for="{{Items}}">
+      <view class="tr">
+        <view class="td">{{item.staff_name}}</view>
+        <view class="td">{{item.money}}</view>
+        <view class="td">{{item.date}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>

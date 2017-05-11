@@ -81,7 +81,7 @@
   </view>
 </view>
 <view class="mine_list list_one">
-  <view class="list_body">
+  <view class="list_body" bindtap="shopIntro">
     <text class="list_body_change">商家简介</text>
     <image class="img_2" src="../../img/16px_26px_V.png"></image>
     <text class="change_num">查看详情</text>

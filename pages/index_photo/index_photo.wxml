@@ -1,32 +1,47 @@
 <!--pages/index_photo/index_photo.wxml-->
 <view class="record_nav">
-  <view class="record_list">
+  <view class="record_list" bindtap="oneTap">
     <image class="li_img" src="../../img/34px_34px_icon1.png"></image>
-    <text class="li_text">等待确认</text>
+    <text class="{{titleshow == 'one' ? 'on':''}}">等待确认</text>
   </view>
-  <view class="record_list record_list_mid">
+  <view class="record_list record_list_mid" bindtap="twoTap">
     <image class="li_img" src="../../img/34px_34px_icon2.png"></image>
-    <text class="li_text">已确认</text>
+    <text class="{{titleshow == 'two' ? 'on':''}}">已确认</text>
   </view>
-  <view class="record_list">
+  <view class="record_list" bindtap="threeTap">
     <image class="li_img" src="../../img/34px_34px_icon3.png"></image>
-    <text class="li_text">已取消</text>
+    <text class="{{titleshow == 'three' ? 'on':''}}">已取消</text>
   </view>
 </view>
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <block wx:for="{{TradePhotos}}">
+    <view class="photo_list">
+      <view class="ph_left">
+        <text class="ph_time">{{item.confirm_time}}</text>
+        <text class="ph_des">{{item.content}}</text>
+      </view>
+      <view wx:if="{{type==1}}" class="ph_right">
+        等待确认
+      </view>
+      <view wx:if="{{type==2}}" class="ph_right">
+        已确认
+      </view>
+      <view wx:if="{{type==4}}" class="ph_right">
+        已取消
+      </view>
+    </view>
 
-<view class="photo_list">
-  <view class="ph_left">
-    <text class="ph_time">2016-01-05 17:30</text>
-    <text class="ph_des">我们的花卉绝对新鲜耐看</text>
-  </view>
-  <view class="ph_right">
-    等待确认
-  </view>
-</view>
-
-<scroll-view class="recommend_scroll_x_box" scroll-x="true">
-  <view class="recommend_hot_box" wx:for="{{hotList}}">
-    <image src="{{item.pic}}" class="recommend_hot_image"></image>
-    
-  </view>
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_hot_box">
+        <block wx:for="{{item.Images}}">
+          <image src="{{item.thumb_url}}" class="recommend_hot_image"></image>
+        </block>
+      </view>
+    </scroll-view>
+  </block>
 </scroll-view>
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>

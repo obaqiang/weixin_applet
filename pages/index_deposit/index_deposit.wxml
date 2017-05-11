@@ -1,14 +1,12 @@
-
 <!--pages/index_deposit/index_deposit.wxml-->
-<view class="deposit_list">
-  <image class="de_head" src="../../img/140px_120px_background.png"></image>
-  <text class="de_name">炒鸡管理员</text>
-  <switch class="de_ch" checked/>
-</view>
-<view class="deposit_list">
-  <image class="de_head" src="../../img/140px_120px_background.png"></image>
-  <text class="de_name">炒鸡管理员</text>
-  <switch class="de_ch" checked/>
-</view>
+<block wx:for="{{Staffs}}">
+  <view class="deposit_list">
+    <image class="de_head" src="../../img/140px_120px_background.png"></image>
+    <text class="de_name">{{item.staff_name}}</text>
+    <text class="{{has_apply==1&&item.is_selected==1?'':'de_wait'}}">审核中</text>
+    <switch bindtap="reView" class="de_ch" data-index="{{item.index}}" wx:if="{{item.is_selected != 0}}" checked/>
+    <switch bindtap="reView" class="de_ch" data-index="{{item.index}}" wx:if="{{item.is_selected != 1}}" />
+  </view>
+</block>
 
 <view class="de_btn">确认</view>

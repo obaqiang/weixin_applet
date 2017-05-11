@@ -1,38 +1,40 @@
 
 <!--pages/index_recharge/index_recharge.wxml-->
 <view class="record_nav">
-  <view class="record_list">
+  <view class="record_list" bindtap="oneTap">
     <image class="li_img" src="../../img/34px_34px_icon1.png"></image>
-    <text class="li_text">等待确认</text>
+    <text class="{{titleshow == 'one' ? 'on':''}}">等待确认</text>
   </view>
-  <view class="record_list record_list_mid">
+  <view class="record_list record_list_mid" bindtap="twoTap">
     <image class="li_img" src="../../img/34px_34px_icon2.png"></image>
-    <text class="li_text">已确认</text>
+    <text class="{{titleshow == 'two' ? 'on':''}}">已确认</text>
   </view>
-  <view class="record_list">
+  <view class="record_list" bindtap="threeTap">
     <image class="li_img" src="../../img/34px_34px_icon3.png"></image>
-    <text class="li_text">已取消</text>
+    <text class="{{titleshow == 'three' ? 'on':''}}">已取消</text>
   </view>
 </view>
-<view class="ch_area">
-  <view class="ch_list">
-    <view class="ch_list_left">
-      <text class="ch_name">测试商品100x2份</text>
-      <text class="ch_prize">20.00元</text>
-    </view>
-    <view class="ch_list_right">
-      <text class="ch_time">2016-05-06 12:55</text>
-      <text class="ch_status">已确认</text>
-    </view>
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <view class="ch_area">
+    <block wx:for="{{Recharges}}">
+      <view class="ch_list">
+        <view class="ch_list_left">
+          <text class="ch_name">{{item.package_names}}</text>
+          <text class="ch_prize">{{item.total_money}}元</text>
+        </view>
+        <view class="ch_list_right">
+          <text class="ch_time">{{item.add_time}}</text>
+          <text class="ch_status" wx:if="{{type==1}}">等待确认</text>
+          <text class="ch_status" wx:if="{{type==2}}">已确认</text>
+          <text class="ch_status" wx:if="{{type==4}}">已取消</text>
+        </view>
+      </view>
+    </block>
   </view>
-  <view class="ch_list">
-    <view class="ch_list_left">
-      <text class="ch_name">测试商品100x2份</text>
-      <text class="ch_prize">20.00元</text>
-    </view>
-    <view class="ch_list_right">
-      <text class="ch_time">2016-05-06 12:55</text>
-      <text class="ch_status">已确认</text>
-    </view>
+  
+</scroll-view>
+<view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
   </view>
-</view>

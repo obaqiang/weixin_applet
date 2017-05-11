@@ -2,7 +2,7 @@
 <!--pages/index_red_packets/index_red_packets.wxml-->
 <view class="pac_head">
   <text class="head_one">红包剩余金额</text>
-  <text class="head_two">10</text>
+  <text class="head_two">{{InMoney}}</text>
   <text class="head_thr">元</text>
 </view>
 <scroll-view class="recommend_scroll_x_box" scroll-x="true">
@@ -13,24 +13,32 @@
 <view class="bill_charge">
   <view class="charge_left">
     合计充值:
-    <text class="charge_num">20</text>元
+    <text class="charge_num">{{total_money}}</text>元
   </view>
   <view class="charge_right">
     已用金额:
-    <text class="charge_num">10</text>元
+    <text class="charge_num">{{OutMoney}}</text>元
   </view>
 </view>
-<view class="table">
-  <view class="tr">
-    <view class="th">名称</view>
-    <view class="th">金额</view>
-    <view class="th ">时间</view>
-  </view>
-  <block wx:for="{{tableList}}" wx:key="{{code}}">
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" style="height: {{scrollHeight}}px" bindscrolltolower="loadMore" bindscrolltoupper="reFresh">
+  <view class="table">
     <view class="tr">
-      <view class="td">{{item.name}}</view>
-      <view class="td">{{item.num}}</view>
-      <view class="td">{{item.time}}</view>
+      <view class="th">名称</view>
+      <view class="th">金额</view>
+      <view class="th ">时间</view>
     </view>
-  </block>
-</view>
+    <block wx:for="{{Items}}">
+      <view class="tr">
+        <view class="td" wx:if="{{item.type == '001'}}">领取</view>
+        <view class="td" wx:if="{{item.type == '001'}}">{{item.in_money}}</view>
+        <view class="td" wx:if="{{item.type == '001'}}">{{item.last_time}}</view>
+        <view class="td" wx:if="{{item.type == '002'||item.type == '003'}}">已用</view>
+        <view class="td" wx:if="{{item.type == '002'||item.type == '003'}}">{{item.money}}</view>
+        <view class="td" wx:if="{{item.type == '002'||item.type == '003'}}">{{item.last_time}}</view>
+        <view class="td" wx:if="{{item.type == '004'}}">过期</view>
+        <view class="td" wx:if="{{item.type == '004'}}">{{item.in_money}}</view>
+        <view class="td" wx:if="{{item.type == '004'}}">{{item.last_time}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
