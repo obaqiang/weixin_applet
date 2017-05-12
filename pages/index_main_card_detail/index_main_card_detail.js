@@ -168,7 +168,7 @@ Page({
   },
   pacJump: function () {//套餐充值跳转
     wx.navigateTo({
-      url: '../index_main_card_package/index_main_card_package?vip_id=' + this.data.vip_id + '&cardtype_id=' + this.data.cardtype_id
+      url: '../index_main_card_package/index_main_card_package?store_id=' + this.data.store_id + '&cardtype_id=' + this.data.cardtype_id
     })
   },
   accJump: function () {//余额页面跳转

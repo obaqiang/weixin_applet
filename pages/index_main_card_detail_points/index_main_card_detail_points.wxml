@@ -1,38 +1,32 @@
 <!--pages/index_main_card_detail_points/index_main_card_detail_points.wxml-->
 
 <view class="points_head">
-    <view class="points_head_list">
-        <view class="list_content">积分明细</view>
-        <image class="list_img" src="../../img/44px_44px_icon1.png"></image>
-    </view>
-    <view class="points_head_list points_head_list_mid">
-        <view class="list_content">当前积分</view>
-        <view class="points_head_num">13131</view>
-    </view>
-    <view class="points_head_list">
-        <view class="list_content">兑换记录</view>
-        <image class="list_img" src="../../img/44px_44px_icon1.png"></image>
-    </view>
+  <view class="points_head_list" bindtap="leftJump">
+    <view class="list_content">积分明细</view>
+    <image class="list_img" src="../../img/44px_44px_icon1.png"></image>
+  </view>
+  <view class="points_head_list points_head_list_mid">
+    <view class="list_content">当前积分</view>
+    <view class="points_head_num">{{end_integral}}</view>
+  </view>
+  <view class="points_head_list" bindtap="rightJump">
+    <view class="list_content">兑换记录</view>
+    <image class="list_img" src="../../img/44px_44px_icon1.png"></image>
+  </view>
 </view>
 
 <view class="points_goods">
-    积分产品
+  积分产品
 </view>
 <view class="pro_area">
+  <block wx:for="{{products}}">
     <view class="pro_list">
-        <image class="pro_img" src="../../img/154px_154px_logo.png"></image>
-        <view class="pro_detail">
-            <text class="pro_name">大苏打撒</text>
-            <text class="pro_more">了开始打飞机立刻接受对方看见对方垃圾地方</text>
-        </view>
-        <image class="pro_icon" src="../../img/16px_26px_V.png"></image>
+      <image class="pro_img" src="{{item.thumb}}"></image>
+      <view class="pro_detail">
+        <text class="pro_name">{{item.product_name}}</text>
+        <text class="pro_more">{{item.product_desc}}</text>
+      </view>
+      <image class="pro_icon" src="../../img/16px_26px_V.png"></image>
     </view>
-    <view class="pro_list">
-        <image class="pro_img" src="../../img/154px_154px_logo.png"></image>
-        <view class="pro_detail">
-            <text class="pro_name">大苏打撒</text>
-            <text class="pro_more">了开始打飞机立刻接受对方看见对方垃圾地方</text>
-        </view>
-        <image class="pro_icon" src="../../img/16px_26px_V.png"></image>
-    </view>
+  </block>
 </view>

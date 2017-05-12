@@ -1,16 +1,17 @@
 
 <!--pages/index_main_card_products_detail/index_main_card_products_detail.wxml-->
+<image class="pro_img" src="{{thumb}}"></image>
 <view class="detail_data">
   <text class="data_left">名称</text>
-  <text class="data_right">啦舍得离开好</text>
+  <text class="data_right">{{goods_name}}</text>
 </view>
 <view class="detail_data">
   <text class="data_left">价格</text>
-  <text class="data_right">啦舍得离开好</text>
+  <text class="data_right">{{goods_price}}/{{unit_name}}</text>
 </view>
 
 
 <view class="detail_des_title">产品描述</view>
 <view class="detail_des">
-    了多久了卡机了可是大家历史的角落开始就过来结果来看就的福利机构浪费的价格两地分居搞定了的风格了会计
+    {{goods_desc}}
 </view>

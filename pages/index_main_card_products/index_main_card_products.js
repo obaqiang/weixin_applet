@@ -6,7 +6,7 @@ Page({
     store_id: '',
     rdata: [],
     chohidden: true,
-    inhidden:'all'
+    inhidden: 'all'
   },
 
   GetAllGoodsClient: function (store_id, token) {//所有商品接口
@@ -30,7 +30,7 @@ Page({
       }
     })
   },
-  GetGoods: function (store_id, goods_name,token) {//搜索接口
+  GetGoods: function (store_id, goods_name, token) {//搜索接口
     var that = this;
     wx.request({
       url: app.globalData.test_url + '/api/goods/GetGoods',
@@ -52,9 +52,19 @@ Page({
       }
     })
   },
+  proJump: function (e) {
+    var goods_name = e.target.dataset.goods_name;
+    var goods_price = e.target.dataset.goods_price;
+    var unit_name = e.target.dataset.unit_name;
+    var thumb = e.target.dataset.thumb;
+    var goods_desc = e.target.dataset.goods_desc;
+    wx.navigateTo({
+      url: '../index_main_card_products_detail/index_main_card_products_detail?goods_name=' + goods_name + '&goods_price=' + goods_price + '&unit_name=' + unit_name + '&thumb=' + thumb + '&goods_desc=' + goods_desc
+    })
+  },
 
-  goodsSearch:function(e){
-    console.log('lala ');
+  goodsSearch: function (e) {
+
     var that = this;
     var goods_name = e.detail.value;
     console.log(goods_name);
@@ -78,10 +88,10 @@ Page({
     console.log(e)
     var index = e.target.dataset.index
     that.setData({
-      inhidden:index,
+      inhidden: index,
       chohidden: true
     })
-   
+
 
 
   },

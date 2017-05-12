@@ -17,7 +17,7 @@
       {{item.class_name}}
     </view>
     <block wx:for="{{item.GoodsList}}">
-      <view class="list_body">
+      <view class="list_body" data-goods_name="{{item.goods_name}}" data-goods_desc="{{item.goods_desc}}" data-goods_price="{{item.goods_price}}" data-unit_name="{{item.unit_name}}" data-thumb="{{item.thumb}}" bindtap="proJump" >
         <image class="list_img" src="{{item.thumb}}"></image>
         <text class="list_name">{{item.goods_name}}</text>
         <text class="list_prize">{{item.goods_price}}元/{{item.unit_name}}</text>

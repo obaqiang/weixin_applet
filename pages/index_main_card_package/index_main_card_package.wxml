@@ -1,20 +1,15 @@
-
 <!--pages/index_main_card_package/index_main_card_package.wxml-->
 <view class="package_area">
-  <view class="package_list">
-    <view class="list_a">买赠</view>
-    <view class="list_b">
-      <view class="list_b_name">超级优惠套餐</view>
-      <view class="list_b_prize">399.00元</view>
+  <block wx:for="{{rdata.data.Data.Packages}}">
+    <view class="package_list">
+      <view wx:if="{{item.type=='001'}}" class="list_a">买赠</view>
+      <view wx:if="{{item.type=='002'}}" class="list_a">储值</view>
+      <view wx:if="{{item.type=='003'}}" class="list_a">计时</view>
+      <view class="list_b">
+        <view class="list_b_name">{{item.package_name}}</view>
+        <view class="list_b_prize">{{item.money}}元</view>
+      </view>
+      <!--<image class="list_img" src="../../img/16px_26px_V.png"></image>-->
     </view>
-    <image class="list_img" src="../../img/16px_26px_V.png"></image>
-  </view>
-  <view class="package_list">
-    <view class="list_a">买赠</view>
-    <view class="list_b">
-      <view class="list_b_name">超级优惠套餐</view>
-      <view class="list_b_prize">399.00元</view>
-    </view>
-    <image class="list_img" src="../../img/16px_26px_V.png"></image>
-  </view>
+  </block>
 </view>

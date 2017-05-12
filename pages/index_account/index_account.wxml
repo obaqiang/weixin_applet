@@ -1,16 +1,41 @@
 <!--pages/index_account/index_account.wxml-->
+<template name="list">
+  <view class="list_body">
+    <view class="outter" data-ithide="{{ithide}}" data-index="{{index}}" bindtap="itShow">
+      <view class="list_name">{{package_name}}</view>
+      <image class="list_img" src="../../img/26px_16px.png"></image>
+      <view class="list_prize">￥{{price}}</view>
+    </view>
+    <block wx:for="{{Items}}">
+      <view wx:if="{{ithide==false}}" class="list_inner">
+        <view class="list_inner_left">
+          <text>{{item.goods_name}}</text>
+          <text>原价 ￥{{item.origin_price}}</text>
+        </view>
+        <view class="list_inner_right">
+          ￥{{item.price}}
+        </view>
+      </view>
+    </block>
+  </view>
+</template>
 
 <view class="account_head">
-    <view class="head_title">
-        <view class="title_num">33242</view>
-        <view class="title_unit">余额总计（元）</view>
-    </view>
+  <view class="head_title">
+    <view class="title_num">{{balance}}</view>
+    <view class="title_unit">余额总计（元）</view>
+  </view>
 
 </view>
-
-<view class="list_body">
-    <view class="list_name">超级豪华套餐</view>
-    <image class="list_img" src="../../img/26px_16px.png"></image>
-    <view class="list_prize">￥110.00</view>
-    
-</view>
+<view class="list_head">买赠套餐</view>
+<block wx:for="{{onedata}}">
+<template is="list" data="{{...item}}" ></template>
+</block>
+<view class="list_head">储值套餐</view>
+<block wx:for="{{twodata}}">
+<template is="list" data="{{...item}}" ></template>
+</block>
+<view class="list_head">计时套餐</view>
+<block wx:for="{{threedata}}">
+<template is="list" data="{{...item}}" ></template>
+</block>

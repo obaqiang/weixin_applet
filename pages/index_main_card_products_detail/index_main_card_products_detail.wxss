@@ -34,3 +34,7 @@
      line-height: 50rpx;
      padding: 20rpx 40rpx;
 }
+.pro_img{
+  width: 100%;
+  height: 400rpx;
+}

@@ -22,11 +22,11 @@
 
 .list_body {
   background-color: #fff;
-  overflow: hidden;
-  height: 80rpx;
+
   line-height: 80rpx;
-  margin-top: 20rpx;
+
   border-bottom: 1rpx solid #ddd;
+
 }
 
 .list_name {
@@ -47,4 +47,38 @@
   float: right;
   margin-right: 20rpx;
   margin-top: 28rpx;
+}
+.outter{
+  overflow: hidden;
+  border-bottom: 1rpx solid #ddd;
+}
+.list_inner{
+
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ddd;
+}
+.list_inner_left{
+
+  font-size: 30rpx;
+  float: left;
+}
+.list_inner_left text{
+  display: block;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+}
+.list_inner_right{
+  float: right;
+  font-size: 30rpx;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+}
+.list_head{
+  background: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ddd;
 }
