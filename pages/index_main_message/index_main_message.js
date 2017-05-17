@@ -3,13 +3,13 @@ var app = getApp();
 var util = require('../../utils/util.js');
 Page({
   data: {
-    resdata:[],
-    type:'001',
-    page_num:1,
-    page_size:10
+    resdata: [],
+    type: '001',
+    page_num: 1,
+    page_size: 10
   },
 
-  GetMsgList: function (member_id, type,page_num, page_size, token) {
+  GetMsgList: function (member_id, type, page_num, page_size, token) {
     var that = this;
     wx.request({
       url: app.globalData.test_url + '/api/member/GetMsgList',
@@ -26,11 +26,29 @@ Page({
       success: function (res) {
         console.log(res.data);
         that.setData({
-          resdata:res.data.Data
+          resdata: res.data.Data
         })
       }
     })
   },
+
+  leftTap: function () {
+    var that = this;
+    that.setData({
+      page_num: 1,
+      type: '001'
+    })
+    that.GetMsgList(app.globalData.member_id, that.data.type, that.data.page_num, that.data.page_size, app.globalData.token)
+  },
+  rightTap: function () {
+    var that = this;
+    that.setData({
+      page_num: 1,
+      type: '002'
+    })
+    that.GetMsgList(app.globalData.member_id, that.data.type, that.data.page_num, that.data.page_size, app.globalData.token)
+  },
+
 
 
   onLoad: function (options) {

@@ -6,6 +6,7 @@ Page({
     vip_id: '',
     page_num: 1,
     page_size: 10,
+    rdata:[]
   },
   GetVipIntegralCA: function (vip_id, page_num, page_size, token) {
     var that = this;
@@ -22,7 +23,14 @@ Page({
       },
       success: function (res) {
         console.log(res.data);
-
+        for (var i = 0; i < res.data.Data.Items.length;i++){
+          var add_time = res.data.Data.Items[i].add_time;
+          add_time = util.getNowFormatDate(add_time);
+          res.data.Data.Items[i].add_time = add_time;
+        }
+        that.setData({
+          rdata:res.data
+        })
       }
     })
   },

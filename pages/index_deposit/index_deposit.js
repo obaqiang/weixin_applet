@@ -32,7 +32,7 @@ Page({
     })
   },
 
-  reView: function (e) {
+  reView: function (e) { 
     var that=this
     console.log(e);
     var index = e.target.dataset.index;

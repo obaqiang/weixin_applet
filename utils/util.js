@@ -25,11 +25,11 @@ function getNowFormatDate(newDate) {
 	if (month >= 1 && month <= 9) {
 		month = "0" + month;
 	}
-	console.log(month);
+	// console.log(month);
 	if (strDate >= 0 && strDate <= 9) {
 		strDate = "0" + strDate;
 	}
-	console.log(strDate);
+	// console.log(strDate);
 	var hours = date.getHours();
 	if (hours < 10) {
 		hours = '0' + hours;
@@ -42,7 +42,7 @@ function getNowFormatDate(newDate) {
 	if (seconds < 10) {
 		seconds = '0' + seconds;
 	}
-	console.log(date.getMinutes());
+	// console.log(date.getMinutes());
 	var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate +
 		" " + hours + seperator2 + minutes +
 		seperator2 + seconds;

@@ -4,7 +4,7 @@ var util = require('../../utils/util.js');
 Page({
   data: {
     store_id: '',
-    vip_id:'',
+    vip_id: '',
     type: 1,
     page_num: 1,
     page_size: 10,
@@ -36,6 +36,11 @@ Page({
   leftJump: function () {
     wx.navigateTo({
       url: '../index_main_card_detail_points_more/index_main_card_detail_points_more?vip_id=' + this.data.vip_id
+    })
+  },
+  rightJump: function () {
+    wx.navigateTo({
+      url: '../index_main_card_detail_points_record/index_main_card_detail_points_record?store_id=' + this.data.store_id + '&vip_id=' + this.data.vip_id
     })
   },
 

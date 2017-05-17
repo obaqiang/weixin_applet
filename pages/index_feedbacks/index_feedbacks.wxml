@@ -1,5 +1,5 @@
 <!--pages/index_feedbacks/index_feedbacks.wxml-->
 <textarea class="text_area" placeholder="请输入反馈，我们将不断改进" />
-<image class="img_upload_icon" src="../../img/70px_54px_p.png"></image>
+<image class="img_upload_icon" bindtap="imgUp" src="../../img/70px_54px_p.png"></image>
 <text class="sug">详细描述您遇到的问题，有助于我们快速了解并解决问题，或留下您宝贵的意见和建议，我们会加速改进</text>
 <button class="btn">问题提交</button>

@@ -1,52 +1,36 @@
-
 <!--pages/index_main_card_detail_points_record/index_main_card_detail_points_record.wxml-->
 <view class="record_nav">
-  <view class="record_list">
+  <view class="record_list" bindtap="oneTap">
     <image class="li_img" src="../../img/34px_34px_icon1.png"></image>
     <text class="li_text">等待确认</text>
   </view>
-  <view class="record_list record_list_mid">
+  <view class="record_list record_list_mid" bindtap="twoTap">
     <image class="li_img" src="../../img/34px_34px_icon2.png"></image>
     <text class="li_text">已确认</text>
   </view>
-  <view class="record_list">
+  <view class="record_list" bindtap="threeTap">
     <image class="li_img" src="../../img/34px_34px_icon3.png"></image>
     <text class="li_text">已取消</text>
   </view>
 </view>
 <view class="record_data">
-  <view class="data_list">
-    <image class="data_img" src="../../img/140px_120px_background.png"></image>
-    <view class="record_data_mid">
-      <view class="data_name">
-        永生花钥匙扣（绒球）
+  <block wx:for="{{rdata.Data.Exchanges}}">
+    <view class="data_list">
+      <image class="data_img" src="../../img/140px_120px_background.png"></image>
+      <view class="record_data_mid">
+        <view class="data_name">
+          {{item.Items[0].product_name}}
+        </view>
+        <view class="data_num">
+          {{item.Items[0].useintegral}}
+        </view>
       </view>
-      <view class="data_num">
-        1500积分
-      </view>
-    </view>
-    <view class="record_data_right">
-      <view class="right_time">
-        2016-04-18 09:59
-      </view>
-      <view class="right_status">等待确认</view>
-    </view>
-  </view>
-   <view class="data_list">
-    <image class="data_img" src="../../img/140px_120px_background.png"></image>
-    <view class="record_data_mid">
-      <view class="data_name">
-        永生花钥匙扣（绒球）
-      </view>
-      <view class="data_num">
-        1500积分
+      <view class="record_data_right">
+        <view class="right_time">
+          {{item.Items[0].add_time}}
+        </view>
+        <view class="right_status">{{status}}</view>
       </view>
     </view>
-    <view class="record_data_right">
-      <view class="right_time">
-        2016-04-18 09:59
-      </view>
-      <view class="right_status">等待确认</view>
-    </view>
-  </view>
+  </block>
 </view>

@@ -62,3 +62,7 @@
 .right_time {
   color: #aaa;
 }
+
+.li_text:hover{
+  color: #cb2920
+}
